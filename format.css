@@ -1,0 +1,57 @@
+
+<style>
+
+
+  table{
+    width: 100%;
+    cellspacing: 0;
+    
+}
+
+
+  h1{
+      font-size: 50px;
+      font-family: Trebuchet MS;
+  }
+
+  tr{
+      *width:1%
+  }
+
+  td{
+      text-align: center;
+      *border: 1px solid black;
+      border-collapse: collapse;
+      width:1%
+  }
+
+  h2{
+      font-size: 35px;
+      font-family: Courier New;
+  }
+
+  h3{
+      font-size: 28px;
+      font-family: Courier New;
+  }
+
+  h4{
+      font-size: 20px;
+      font-family: Courier New;
+  }
+
+  p{
+      font-family: Trebuchet MS;
+  }
+
+  .centerImage{
+      text-align:center;
+      display: block;
+      }
+      
+
+  
+  
+      
+</style>
+
