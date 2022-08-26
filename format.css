@@ -76,11 +76,10 @@ table{
   }
 
   .bottom{
-      position: fixed;
+      position: absolute;
       bottom: 0px;
       text-align: center;
       width: 100%;
-      left: 40%;
       background-color: powderblue;
 	    
   }
