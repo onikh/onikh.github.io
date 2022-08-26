@@ -1,10 +1,9 @@
 
 <style>
+
 body{
     background-color: powderblue;
-    color: powderblue;
 }
-
 
 table{
     width: 100%;
@@ -74,6 +73,16 @@ table{
 
   .cited{
       text-align: center;
+  }
+
+  .bottom{
+      position: fixed;
+      bottom: 0px;
+      text-align: center;
+      width: 100%;
+      left: 40%;
+      background-color: powderblue;
+	    
   }
   
   
