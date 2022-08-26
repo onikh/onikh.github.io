@@ -60,6 +60,8 @@ table{
       font-family: Trebuchet MS;
   }
 
+  img
+
   .center {
       display: block;
       margin-left: auto;
@@ -76,9 +78,9 @@ table{
   }
 
   .bottom{
-      position: absolute;
+      position: fixed;
       bottom: 0px;
-      text-align: center;
+      text-align: right;
       width: 100%;
       background-color: powderblue;
 	    
