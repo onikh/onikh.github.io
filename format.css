@@ -1,5 +1,6 @@
 
-<style>
+
+
 
 body{
     background-color: powderblue;
@@ -7,64 +8,64 @@ body{
 
 table{
     width: 100%;
-    *cell-spacing: 0;
-    border: 0;
-    background-color: powderblue;
+    background-color: #298EBF;
+    margin-left: 0px;
+    margin-right: 0px;
 }
+
 
 
   h1{
       font-size: 50px;
-      font-family: Trebuchet MS;
+      font-family: "Trebuchet MS";
   }
 
   button{
       border: none;
-      background-color: powderblue;
+      background-color: #298EBF;
       font-size: 16px;
-      font-family: Courier New;
+      font-family: "Courier New";
   }
 
   button:hover{
-      background-color: #3342FF;
-      transition: 1.0s;
+      color: white;
+      transition: 0.5s;
   }
 
   tr{
-      *width:1%
+     
   }
 
   td{
       text-align: center;
-      *border: 1px solid black;
       border-collapse: collapse;
-      width:1%
+      *width:1%
   }
 
   h2{
       font-size: 35px;
-      font-family: Courier New;
+      font-family: "Courier New";
   }
 
   h3{
       font-size: 28px;
-      font-family: Courier New;
+      font-family: "Courier New";
   }
 
   h4{
       font-size: 20px;
-      font-family: Courier New;
+      font-family: "Courier New";
   }
 
   p{
-      font-family: Trebuchet MS;
+      font-family: "Trebuchet MS";
   }
 
-  img{
-     * display: block;
-     * margin-left: auto;
-     * margin-right: auto;
-     * width: 50%;
+
+  figcaption{
+      text-align: center;
+      font-family: "Trebuchet MS";
+      font-size: 12px;
   }
 
   .center {
@@ -86,9 +87,25 @@ table{
       bottom: 0px;
       text-align: right;
       width: 100%;
-      background-color: powderblue;
-	    
+      background-color: powderblue;	    
   }
+
+  .hanging{
+      padding: 10px;
+      padding-left: 64px;
+      text-indent: -60px;      
+  }
+
+  .linkbarblue{
+      background-color: #30D3EA;
+  }
+
+  .centertxt{
+      text-align:center;
+  }
+
+  
+      
   
   
       
