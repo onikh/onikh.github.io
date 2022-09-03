@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+  
+  <head>
+    <link rel="stylesheet" href="../../format.css"> <title>Fingerprints</title> <meta charset="utf-8">
+  </head>
+
+   <body style="background-color:powderblue;">
+
+  <h1 class="centertxt">Onik Hoque's Digital Portfolio</h1>
+
+  <table>  
+    <tr>
+      <td> <button onclick="location.href='../../index.html'">Home</button> </td>
+      <td> <button onclick="location.href='../../Pages/aboutme.html'">About Me</button> </td>
+      <td> <button onclick="location.href='../../Pages/courses.html'">Courses</button> </td>
+      <td> <button onclick="location.href='../../Pages/why.html';">Portfolio</button> </td>
+      <td> <button onclick="location.href='fingerprints.html'">Fingerprints</button> </td>
+      <td> <button onclick="location.href='AI Sentience.html'">AI Sentience</button> </td>
+    </tr>
+    </table>
+	     
+
+
+    
+    <br>
+    
+    
+    
+    <h2>FINGERPRINTS: A BRIEF EXPLANATION</h2>
+    <br>
+
+  <p class="centertxt">Onik Hoque<br><br>
+  Allen High School STEAM Campus<br><br>
+  Advanced Computer Science II<br><br>
+  Mr. Ben-Yaakov<br><br>
+  August 25, 2022<br><br><br></p>
+  
+      <p class="essay"> For years, the internet was based on the insecure HTTP (Hypertext Transfer Protocol). However, as time has passed, the more secure HTTPS (Hypertext Transfer Protocol Secure) has become more prevalent. Also called SSL (Secure Sockets Layer) and TLS (Transport Layer Security), HTTPS was created for two primary reasons: privacy and security (Gibson). HTTPS ensures our privacy by encrypting data sent back and forth, improving our privacy and creating systems of authentication that ensure that the website you are visiting has a legitimate certificate proving its identity. A browser has a list of trusted CAs (Certificate Authorities), and if a website presents a certificate digitally signed by one of these authorities, the website is deemed secure and safe by the HTTPS protocol.</p>
+      <p class="essay">	However, the advantages that come along with HTTPS can be negated by HTTPS proxy appliances, commonly used by schools, businesses, and other institutions. By adding a Pseudo Certificate authority (a certificate authority added to the list of trusted CAs by an external institution) to browsers or computers within their network, they can then manipulate that certificate authority (Gibson). They then can create spoofed certificates to impersonate websites, and all input made by the user is not encrypted but goes through the proxy server. The data can then go through to the intended remote website as if there was a direct link to the remote website without an HTML proxy appliance. The browser and user both have no way of knowing, as everything is kept identical. These are a type of MITM (man-in-the-middle) exploit. By intercepting data and sending it to the intended source, one can essentially view all the data from the interaction, and the two parties exchanging data would have no way of knowing that their data is being intercepted (Fisher). Risks can include having data stolen, having data sent to remote websites be intercepted and edited, and websites being modified (for example, running ads not placed by the website&#39;s owner).</p>
+<p class="essay">	Although HTTPS/SSL decryption cannot be prevented, the fact that certificates have unique private and public keys means that we can tell when one&#39;s data is being run through an SSL/HTML Proxy Appliance. Public keys, which everyone has access to, cannot be used to derive a private key, and what&#39;the public keys encrypt only those with access to the private key can decrypt. An SSL/HTML proxy appliance does not have access to the private key, meaning that it must use a different public key for which it also has the private key, and from there communicate with the remote website (Gibson). This means that the certificate will have to have a different public key, allowing you to determine whether your traffic is being funneled through an SSL/HTML proxy appliance.</p>
+<p class="essay">	So how can we easily detect changes in the certificate of a website? Check the fingerprints. Fingerprints are outputs from a hash algorithm: hash algorithms are algorithms that take the data from the certificate as input and output a string of letters and numbers, which we can use as a fingerprint. What makes hashes such a useful tool is that if even one bit of information hashed is different from otherwise identical data input, the output hash will be completely different (on average half the characters change for a one-bit difference) (Gibson). Thus, no matter how similar the certificate is, if it isn’t the exact authentic certificate of the remote website, the fingerprint/hash will be drastically different. Different hash algorithms bring varied results. Some are better than others. For example, certificate fingerprints were created using the MD5 hashing algorithm in the past, but after the discovery of weaknesses in the algorithm, SHA1 has begun being used due to its strength and security. Ideally, a hash function doesn&#39;t give similar values for inputs (termed collisions), has low similarity between hash outputs that come from slightly changed inputs, and has no patterns that can be discerned from their inputs (MD5). Most browsers hash certificates and add the resulting fingerprint in the certificate info of a website, saving us a little bit of time. </p>
+<p class="essay">	However, these tests can not always be 100% accurate. For example, Google is a large conglomerate company employing thousands of websites and servers, many of which have different certificates. Some users would obtain different certificates, and those wishing to test the fingerprints against each other would be falsely led to believe that an HTML proxy appliance was in play, when in reality none is involved and the remote website simply gave them different certificates than the one they chose to compare it to (Gibson). For example, www.wordpress.com and wordpress.com have different certificates, despite being the same site. One must be cautious when comparing certificates, and if not careful a false positive like the one shown here could trick you. To ensure that you aren’t receiving one of these “false positives,” it is crucial that you verify it. While in the past the easiest way was to go to a site known to have an EV (Extended Validation) certificate, newer versions of Chrome and Firefox have ended support for EV Certificate indication in the address bar. However, this is still visible in the certificate information. Usually, a green address bar or green text in the page info is an indicator of an EV certificate. If a site known to have an EV does not display an EV when you visit it, you are a victim of HTML proxy appliances. Similarly, you can visit a website known to have one certificate (usually those not of origin with large companies), and check the certificate you receive against the authentic certificate. The fact that these have one certificate ensures you will not be a victim of a false positive.</p>
+<p class="essay">	I believe that the government, schools, and our internet service providers shoud have the right to eavesdrop on our communications to an extremely limited extent. However, as evidenced by whistleblowers like Ed Snowden, this line has been crossed by the government many times. The NSA has full access to all of our text messages, emails, and more. ISPs have access to everything as well, and all traffic on the school connection can be monitored. At what point does it cross the line from being for our own good to being an invasion of privacy? I think the answer lies somewhere in the middle. Probable cause for vehicle searches has existed for years and is a system that the general public agrees on that it compromises between potential danger and privacy. Although it would be susceptible to misuse by the government (and most likely will be, considering many of the things they&#39;ve done and hidden from the public), a system where in the case of a criminal investigation, messages can be accessed. Of course, this is something many have thought of but is very difficult to implement because of the heavily encrypted services used by criminals, and the fact that nothing would be stopping the government from misusing their tools. As for schools, I believe that it isn&#39;t as big a moral issue. Students shouldn&#39;t really have much to worry about, but at the same time schools blocking non-educational sites doesn&#39;t really have an effect on children. Those who value their education will work, and those who don&#39;t will find something else to do, regardless of how much you limit them. 
+</p>
+  <p class="essay">      To conclude concisely, fingerprints are a unique identifier that each website holds as a result of the hash from their certificate. Public keys are used to encrypt information submitted by the user, and private keys are used to decrypt it once it reaches the remote website. Private keys are used by the website to decrypt submitted information, meaning that those without the private key cannot decrpyt that information. Thus, in order to intercept information, institutions and businesses will often use fraudulent certificates by adding illegimate certification authorities (authorities that verify certificates and ensure websites are legitimate), which take your input under the guise of the website one is intending to visit. After this, the information is sent from the interceptor to the website, and both the website and the user cannot tell that their data exchange was intercepted. However, the fingerprints of these fraudulent certificates cannot be the same as the aauthentic certificate. If you have the fingerprint of the authentic certificate, you can compare it with the certificate you are shown to ensure that you are being shown a legitimate certificate and your internet traffic is going straight to the website, and not intercepted by an HTML proxy appliance. So why should we care? In an ever changing world, our privacy is being compromised. Our data is routinely tracked by schools, workplaces, and internet service providers, and most of us live in ignorance of this fact. If we want to protect our privacy, we need to make ourselves aware of these thing to ensure the integrity of our privacy.</p>
+
+
+<br>
+<img src="../../Images/flowchart.png" class="center" alt="Image failed to load">
+<br><br><br><br>
+
+
+
+<div class="cited">
+  <p>References</p>
+  </div>
+
+
+<p class="hanging">Steve, S., & Gibson, G. R. (n.d.). Grc | SSL tls HTTPS web server certificate fingerprints. Gibson Research Corporation. https://www.grc.com/fingerprints.htm#top</div>
+
+<p class="hanging">MD5 vs SHA-1 vs SHA-2 - Which is the most secure encryption hash and how to check them. (2020, March 27). freeCodeCamp.org. https://www.freecodecamp.org/news/md5-vs-sha-1-vs-sha-2-which-is-the-most-secure-encryption-hash-and-how-to-check-them/</div>
+
+<p class="hanging">Fisher, G. (2021, September 20). Monsters in the middleboxes: Introducing two new tools for detecting HTTPS interception. The Cloudflare Blog. Retrieved August 30, 2022, from https://blog.cloudflare.com/monsters-in-the-middleboxes/ </p>
+
+<br><br>
+
+
+  </body>
+  </html>

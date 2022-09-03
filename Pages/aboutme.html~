@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <link rel="stylesheet" href="format.css"> <title>About Me</title> <meta charset="utf-8">
+  </head>
+
+  <body style="background-color:powderblue;">
+  
+  <h1 class="centertxt">Onik Hoque's Digital Portfolio</h1>
+  
+
+      <table>  
+    <tr>
+      <td> <button onclick="location.href='../index.html'">Home</button> </td>
+      <td> <button onclick="location.href='aboutme.html'">About Me</button> </td>
+      <td> <button onclick="location.href='courses.html'">Courses</button> </td>
+      <td> <button onclick="location.href='why.html'">Portfolio</button> </td>
+      <td> <button onclick="location.href='../CS-II/Essays/fingerprints.html'">Fingerprints</button> </td>
+      <td> <button onclick="location.href='../CS-II/Essays/AI Sentience.html'">AI Sentience</button> </td>
+    </tr>
+    </table>
+	    
+    
+    <br>
+    
+    
+    
+    <h2>ABOUT ME</h2>
+      <br>
+  <p>Hi! My name is Onik Hoque and I am a junior at Allen High School. I am in Mr. Ben's third period CS2, and I also took CS1 last year. I started playing basketball this summer, and it's become a major pasttime of mine. Music is a big thing for me; I think that when I grow up I would most like to be a singer. CS is also something I ifnd really interesting, and a hoping to get more into this school year. This year, I am hoping to expand my knowledge in computer science, and see what kind of avenues open.</p>
+
+      <p>I was born in Dallas, but moved to the suburbs of Washington DC when I was 8. I lived there for 4 years, and during that time I really got to the know the people and find a place I truly considered home. I moved back at the age of 12, but those years were very formative for me, and I consider myself as having grown up in DC. I credit the forests and creeks of the land with fostering my sense of curiosity, the same sense that I apply today to computer science.</p>   
+      <img src="Images/aboutme.png" class="center" width="200" height="250" alt="Image failed to load">
+
+      <div><p class="bottom">Digital Portfolio can be found on GitHub <a href="https://onikh.github.io/index.html">here</a></p></div>
+  </body>
+  </html>

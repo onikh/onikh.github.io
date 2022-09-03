@@ -76,6 +76,7 @@ table{
 
   .essay{
       text-indent: 50px;
+      line-height: 2;
   }
 
   .cited{

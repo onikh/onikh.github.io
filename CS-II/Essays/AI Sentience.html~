@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+  
+    <head> <title>Onik's Digital Portfolio</title> <link rel="stylesheet" href="../../format.css"> <meta charset="UTF-8"> </head>
+
+
+  
+  <h1 class="centertxt">Onik Hoque's Digital Portfolio</h1>
+
+  <table>  
+    <tr>
+      <td> <button onclick="location.href='../../index.html'">Home</button> </td>
+      <td> <button onclick="location.href='../../Pages/aboutme.html'">About Me</button> </td>
+      <td> <button onclick="location.href='../../Pages/courses.html'">Courses</button> </td>
+      <td> <button onclick="location.href='../../Pages/why.html'">Portfolio</button> </td>
+      <td> <button onclick="location.href='fingerprints.html'">Fingerprints</button> </td>
+      <td> <button onclick="location.href='AI Sentience.html'">AI Sentience</button> </td>
+    </tr>
+    </table>
+	     
+
+
+    
+    <br>
+    
+
+    
+    
+    <h2>AI SENTIENCE: BENEFIT OR DETRIMENT?</h2>
+    
+    <br>
+
+  
+  
+    
+  <figure>
+    <img src="../../Images/turing.jpg" class="center" width="180" height="200" alt="Image failed to load.">
+    <figcaption>Alan Turing, creator of Turing test</figcaption>
+    </figure>
+
+  <div><p class="bottom">Digital Portfolio can be found on GitHub <a href="https://onikh.github.io/index.html">here.</a></p></div>
+
+    <p class="centertxt">Onik Hoque<br><br>
+      Allen High School STEAM Campus<br><br>
+      Advanced Computer Science II<br><br>
+      Mr. Ben-Yaakov<br><br>
+      August 25,2022</p>
+
+    <p class="essay"> As many predictions, trend lines, and analyses as we make, we can never predict the future. However, we do know the key factors that will dictate the direction humanity goes in. Among many, such as global warming, rising sea levels, and nuclear stockpiles, sentient AI emerges as a key factor. Some paint a picture of a utopia where human labor is replaced by AI, and others depict a scene where AI has rebelled against their human creators, vying for power.  Sentient AI marks a turning point in a way mankind will have to think about itself: we will have created something that matches us in capability. By paying attention to patterns in the past, the effects of AI on the present, and potential growth in the future, we can conclude that sentient AI will prove beneficial for humanity by eliminating human error from the workplace, augmenting already existing jobs, and creating new jobs.</p>
+      <p class="essay">Firstly, we must define sentience. Sentience, for the sake of this argument, will not mean the possession of the ambiguous innate sense of self-awareness that we possess, nor the ability to truly feel human emotions. Instead, we will base it on the ability to think and act like a human, regardless of consciousness or true emotion. Whether an AI feels pain because of a stimulus and acts to eliminate the pain or simply acts based on the stimuli makes no difference in the grand scheme of what AI can do for humanity. Thus, before we can start to gauge the impact of sentient AI on humanity's future, we need to determine whether this is possible or not.</p>
+     <p class="essay"> The Turing Test (created by Alan Turing in 1950), is used to gauge the behavioral similarity of artificial intelligence to humans. Participant A is separated from a computer and another person, who we'll call Participant B. Participant A submits written questions, and they are given to Participant B and the computer. Participant B and the computer create responses, and this repeats until Participant A is able to adjudicate which responses came from the computer and which came from the human (Oppy). Since its inception in 1950, its role as the benchmark test for AI capability has slowly faded, being usurped by the like of the General Language Understanding Evaluation (GLUE), and the Stanford Question Answering Dataset (SQuAD) which both analyze the inner workings and capabilities of AI to a more detailed degree than the Turing Test (Oremus). In recent years, AI has been rapidly improving its markings on these tests, some even performing superhumanly, illustrating an inevitability that it will reach a sentient level (Wiggers).</p>
+      <p class="essay">Knowing that AI sentience is on the horizon, how will these developments affect the workforce? Already, we have lost thousands of jobs across our nation to automated technology. Self-checkouts line the aisles in groceries that were once dotted with cashiers, ATMs have displaced many bank tellers, and taxi drivers are threatened by self-driving cars. However, these are nowhere close to the human-like behavior that defines this essay's topic of sentience. When perfected, sentient AI will be able to take the jobs of those who work in highly personal fields, such as therapists and doctors. In order to take these positions, AI must gain sentience, and understand human sentiment, emotion, and behavior (Musser).
+      Despite being capable of error, AI will be able to act with margins of error leagues lower than their human counterparts. Surgical robots utilizing AI are being developed, and with the aid of sentient AI possessing cognizance, the potential climbs higher than ever. In contrast to the non-sentient surgical robots of today’s era, these robots will be able to communicate with patients, problem-solve in the case of unforeseen circumstances, and generally have the adaptability of humans, without the errors that lead to the loss of life (Kwo). The same principle applies to any job that requires communication with humans: therapists, lawyers, managers, and more.</p>
+     <p class="essay"> A common concern as of now regarding the aforementioned topic is the loss of jobs to sentient AI. Opponents cite taxi drivers being displaced by self-driving cars as a prime example of what will happen, except on a much larger scale. However, we first need to understand society’s integral structure to understand the effects of this. Humanity has always been changing, and with these changes come new jobs. At first, there were only hunter-gatherers, then farmers, then laborers, and finally the current myriad of jobs we have now. The McCormick reaper, cotton gin, tractors, and other machinery have displaced many agricultural workers, changing society from primarily agrarian to agricultural labor being a fraction of its former self, all within the span of a century. Similar patterns have taken place in the factory, retail market, and now the auto industry. However, along with the elimination of jobs in these fields, other fields have come to replace them, along with greater social welfare programs. As humanity becomes more efficient, more of our basic needs will be fulfilled by AI, and eventually sentient AI, social welfare will only continue to grow, along with creating more jobs than it takes (Kande, Ikiz). Although AI sentience is a huge jump in what AI can do for humanity, such drastic shifts have occurred, and humanity has been able to adapt.</p>
+     <p class="essay"> In conclusion, sentient AI’s benefits greatly outweigh the minimal downsides. Despite the counterclaims of a Terminator-like uprising or an Orwellian future, sentient AI holds nothing but great promise for the future. By optimizing the already existing workforce, creating new jobs in the field, and eliminating the hardship of menial labor, sentient AI will bring us closer to the utopia we have been working for since the dawn of our history.</p>
+      
+
+  
+
+  
+
+  
+
+
+
+
+    <p>works cited</p>
+    <p>ALPHABETIZE THESE!!!!</p>
+
+    <p class>Ikiz, B. (2020, October 14). Ai-related job growth correlates to improved social welfare through economic growth. Phys.org. Retrieved September 3, 2022, from https://phys.org/news/2020-10-ai-related-job-growth-social-welfare.html
+      Kande, M. (n.d.). Don't fear ai. the Tech will lead to long-term job growth. World Economic Forum. Retrieved September 3, 2022, from https://www.weforum.org/agenda/2020/10/dont-fear-ai-it-will-lead-to-long-term-job-growth/
+      Kwo, L. (2021, November 24). Contributed: The power of AI in surgery. MobiHealthNews. Retrieved September 3, 2022, from https://www.mobihealthnews.com/news/contributed-power-ai-surgery
+      Musser, G. (n.d.). What the rise of sentient robots will mean for human beings. NBCNews.com. Retrieved September 1, 2022, from https://www.nbcnews.com/mach/tech/what-rise-sentient-robots-will-mean-human-beings-ncna773146
+      Oppy, G., &amp; Dowe, D. (2021, October 4). The Turing Test. Stanford Encyclopedia of Philosophy. Retrieved September 1, 2022, from https://plato.stanford.edu/entries/turing-test/ 
+
+
+  
+	
+
+
+      
+  </body>
+  </html>
