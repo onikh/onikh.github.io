@@ -14,8 +14,9 @@
       <td> <button onclick="location.href='aboutme.html'">About Me</button> </td>
       <td> <button onclick="location.href='courses.html'">Courses</button> </td>
       <td> <button onclick="location.href='why.html'">Portfolio</button> </td>
-      <td> <button onclick="location.href='../CS-II/Essays/fingerprints.html'">Fingerprints</button> </td>
-      <td> <button onclick="location.href='../CS-II/Essays/AI Sentience.html'">AI Sentience</button> </td>
+      <td> <button onclick="location.href='../CS-II/Essays/Fingerprints.html'">Fingerprints</button> </td>
+      <td> <button onclick="location.href='../CS-II/Essays/AI%20Sentience.html'">AI Sentience</button> </td>
+      <td> <button onclick="location.href='../CS-II/Projects/Optimal%20Sort.html'">Optimal Sort</button> </td> 
     </tr>
     </table>
     
@@ -23,19 +24,22 @@
     
     
     
-    <h2>COURSES</h2>
+    <h2 class="generalHeader">COURSES</h2>
       <br>
-      <h3>CS1</h3>
-      <p>During CS1, I learned about all the basics of coding. First was how to navigate Bash, and after that I began to learn about Boolean Algebra and logic gates. My first coding experience was writing journals in HTML. After I had learned all this, I began coding with swift. Learning the syntax and what features do what were kind of difficult for me. I knew what I had to do to solve problems in my head, but translating that into code was a huge problem in itself. I learned that the best way to learn is to ask questions, so that's what I begin doing. My friends were able to explain how everything worked, and my teacher did as well. With my newfound understanding, I was able to master all the assignments given to me. Our ISP project, where we had to create a game, is the best display of my skills at the time.</p>
+      <h3 class="generalHeader">CS1</h3>
+      <p class="generalText">During CS1, I learned about all the basics of coding. First was how to navigate Bash, and after that I began to learn about Boolean Algebra and logic gates. My first coding experience was writing journals in HTML. After I had learned all this, I began coding with swift. Learning the syntax and what features do what were kind of difficult for me. I knew what I had to do to solve problems in my head, but translating that into code was a huge problem in itself. I learned that the best way to learn is to ask questions, so that's what I begin doing. My friends were able to explain how everything worked, and my teacher did as well. With my newfound understanding, I was able to master all the assignments given to me. Our ISP project, where we had to create a game, is the best display of my skills at the time.</p>
       <br>
-      <h4>CS1 ISP: POKEMIGUEL</h4>
-      <p> Inspired by the likes of Pokemon and Golden Sun, Pokemiguel was the first game I created. The player has to traverse a forest on a secluded island, where they reach the center of the island to fight Miguel, the antagonist of the game (and also a good friend of mine). The game has three distinct phases: the title screen, the overworld, and the boss battle.</p>
-      <img src="https://github.com/onikh/ISPData/blob/main/logo2.png?raw=true" class="centerImage" alt="Failed to load image">
+      <h4 class="generalHeader">CS1 ISP: POKEMIGUEL</h4>
+      <p class="generalText"> Inspired by the likes of Pokemon and Golden Sun, Pokemiguel was the first game I created. The player has to traverse a forest on a secluded island, where they reach the center of the island to fight Miguel, the antagonist of the game (and also a good friend of mine). The game has three distinct phases: the title screen, the overworld, and the boss battle.</p>
+      <img src="https://github.com/onikh/ISPData/blob/main/logo2.png?raw=true" alt="Failed to load image" class="center">
       <br>
-      <img src="https://github.com/onikh/ISPData/blob/main/overworld.png?raw=true" width="500" height="250" alt="Failed to load image">
-      <img src="https://github.com/onikh/ISPData/blob/main/battle.png?raw=true" width="500" height="250" alt="Failed to load image">
+      <img src="https://github.com/onikh/ISPData/blob/main/overworld.png?raw=true" width="500" height="250" alt="Failed to load image" class="center">
+      <img src="https://github.com/onikh/ISPData/blob/main/battle.png?raw=true" width="500" height="250" alt="Failed to load image" class="center">
       <br>
-  <p>The biggest challenge for my project was bounding. There are two coordinate systems in play in the overworld system of my game: the background image, and the bounding rects and other objects onscreen, which adapted to browser size. The issue was that These weren't multiples of each other, meaning that when the image moved 10 pixels the corresponding image would need to move (just as a hypothetical) 8.6, but could only move in integer quantities. As you approached objects, they moved towards the character faster than the image or vice versa, resulting in a desync between the objects and the background. To fix this, I created a function that calculated the distance of an object from the character, and used the browser size to calculate the disparity for each step the character took between the background and the objects. Using this, I can purposely offset the object by it's distance from the character times the truncating remainder of the equivalent unit in the image, meaning that all objects are desynced when you spawn, but as you approach them they sync. This has a margin of error less than 1 pixel, not affecting gameplay. Adapting the game to any screen size was incredibly difficult, and I had to take advantage of functions that returned the size of the canvas.</p>
+  <p class="generalText">The biggest challenge for my project was bounding. There are two coordinate systems in play in the overworld system of my game: the background image, and the bounding rects and other objects onscreen, which adapted to browser size. The issue was that These weren't multiples of each other, meaning that when the image moved 10 pixels the corresponding image would need to move (just as a hypothetical) 8.6, but could only move in integer quantities. As you approached objects, they moved towards the character faster than the image or vice versa, resulting in a desync between the objects and the background. To fix this, I created a function that calculated the distance of an object from the character, and used the browser size to calculate the disparity for each step the character took between the background and the objects. Using this, I can purposely offset the object by it's distance from the character times the truncating remainder of the equivalent unit in the image, meaning that all objects are desynced when you spawn, but as you approach them they sync. This has a margin of error less than 1 pixel, not affecting gameplay. Adapting the game to any screen size was incredibly difficult, and I had to take advantage of functions that returned the size of the canvas.</p>
+
+  <br>
+  <br>
 
   <div><p class="bottom">Digital Portfolio can be found on GitHub <a href="https://onikh.github.io/index.html">here</a></p></div>
       
