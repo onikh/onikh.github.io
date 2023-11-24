@@ -1,0 +1,50 @@
+
+<style>
+
+.box1,
+.box2,
+.box3,
+.box4{
+    width: 25%;
+    height: 125px;
+    vertical-align: top;
+    display: inline-block;
+
+}
+  
+
+  h1{
+      font-size: 50px;
+      font-family: Trebuchet MS;
+  }
+
+  h2{
+      font-size: 35px;
+      font-family: Courier New;
+  }
+
+  h3{
+      font-size: 28px;
+      font-family: Courier New;
+  }
+
+  h4{
+      font-size: 20px;
+      font-family: Courier New;
+  }
+
+  p{
+      font-family: Trebuchet MS;
+  }
+
+  .centerImage{
+      text-align:center;
+      display: block;
+      }
+      
+
+  
+  
+      
+</style>
+

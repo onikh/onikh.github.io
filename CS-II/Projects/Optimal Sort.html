@@ -30,6 +30,7 @@
     <h2 class="generalText">SORTING A LIST BY ALPHA ORDER</h2>
     
     <br>
+    <h3 class ="generalText">Our Algorithm: Alphabetical Sort</h3>
       <p class="generalText">Created by Aidan Valva, Rafid Ahmed, Onik Hoque, and Shivangi Gupta.</p>
       
       <br><br><br><br><br>
@@ -41,13 +42,77 @@
       <p class="generalText">Link to algorithm test summary can be found <a href="https://docs.google.com/spreadsheets/d/1iao4vs585XMfB4EX0bils9fIJN4_bbxwvlzW1sY6qKA/edit#gid=836063452">here</a></p>
 
 
-      <br><br><br>
-						  
+      <br><br>
+
+      <h3 class ="generalText">Sort Analysis</h3>
+      <br>
+      <p class="generalText"> Sorting algorithms may not seem like a deep topic of discussion, but the topic is filled with nuances and it reaches deeper than one may believe. In this project, I logged the data from bubble sort, insertion sort, selection sort, and my own algorithm above againt various text files to see how fast they could be sorted. I tested each for best, worst, and average case scenarios using pre-ordered, reverse-ordered, and random order text files, respectively.</p>
+
       
+
+      <p class="generalText">All links can be found here, test files used for testing are included with the source code of each algorithm:</p>
+
+      
+      <p class="generalText"><a href="https://docs.google.com/spreadsheets/d/1NVTbp-d1RwDmGQ325QWus3bTE7krtJlGHWQf72OMXUM/edit?usp=sharing">Log of all tests w/ summary</a></p>
+      
+    <p class="generalText"><a href="https://github.com/onikh/bubble-sort">Bubble Sort</a></p>
+
+      <p class="generalText"><a href="https://github.com/onikh/selection-sort">Selection Sort</a></p>
+
+      <p class="generalText"><a href="https://github.com/onikh/insertion-sort">Insertion Sort</a></p>
+
+      <p class="generalText"><a href="https://github.com/onikh/alphabetical-sort">My Algorithm</a></p>
+
+
+      <br><br>
+
+      <h3 class="generalText">Bubble Sort</h3>
+      <img src="../../Images/OptimalSort/BubbleSort.png" class="center" width="600" height="450" alt="Image failed to load.">
+      <p class="generalText"> We begin by testing what is deemed by many to be the simplest sorting algorithm: Bubble Sort. This algorithm works by iterating through each elemnent of the array, starting at index 1. If the element in the previous index is bigger, then the two elements swap. This goes on through each element and the array is iterated through until it reaches the end without making any changes from the start. Inputting an ordered list means that the array is simply iterated through once, making for a linear looking graph, which tapers off at the end only because values in the x-axis aren't spaced proportionally. However, random and reverse-ordered input result in drastically different results than ordered input. They become quadratic curves, and dwarf the runtimes of the ordered list. Reverse ordered requires more operations (assuming that a perfectly reversed input isn't generated randomly) than does randomly generated input, accounting for the higher runtimes for reverse-ordered input. </p>
+      <br>
+
+      <h3 class="generalText">Selection Sort</h3>
+      <img src="../../Images/OptimalSort/SelectionSort.png" class="center" width="600" height="450" alt="Image failed to load.">
+      <p class="generalText">Selection Sort begins by iterating through the entire array, and swapping the least value with the element at index 0. Having placed the correct object at index 0, the algorithm can continue scanning for the smallest element, this time from index 1, and swapping that with index 1 after the array has been transversed. This is continued for the whole array. It's hard to miss the fact that best case (ordered), worst case (reverse-ordered), and average case scenario(ordered) fall right on top of each other, with very little difference in time. This is because unlike bubble sort, which transverses through the whole array for each pass, selection sort doesn't realize whether the array is sorted or not until a section of the array has been transversed for every element. This means that the performance with ordered matches that of random input and reverse-order input. The best case, worst case, and average case scenarios all have similar curves, mirroring that of a quadratic; this makes sense considering that that in all three cases the time complexity of selection sort is O(n*2). </p>
+
+      <br><br>
+
+      <h3 class="generalText">Insertion Sort</h3>
+      <img src ="../../Images/OptimalSort/InsertionSort.png" class ="center" width="600" height="450" alt="Image failed to load">
+      <p class="generalText"> Insertion Sort has a graph very similar to that of Bubble Sort, with run time with ordered input running much faster than random input and reversed-order input. It is very similar to Bubble Sort, but instead of swapping and moving on, elements are continuously checked to see if they are less than the value of the previous element, and keep being swapped if true. By the time it reaches the end of the array, it is sorted, unlike Bubble Sort which often has to traverse the array multiple times. This ensures that in the best case scenario the array is traversed through only once without swaps being made, giving the ordered data a linear appearance and the reverse-ordered and random data quadratic appearances, corresponding to their respective time complexities of O(n), O(n^2), and O(n^2). </p>
+
+      <br>
+
+      <h3 class="generalText">My Algorithm</h3>
+      <img src ="../../Images/OptimalSort/AlphabeticalSort.png" class ="center" width="600" height="450" alt="Image failed to load">
+
+      <p class="generalText">This algorithm, based on quicksort, has very strange behavior compared to the other graphs. The algorithm works by partitioning off part of the array, and assigning a pivot value. the array is sorted so that everything to the left of the array is less than the pivot and everything to the right is greater than it. The values above and below the pivot are then recursively fed into the same function until the array has been sorted. What my algorithm adds, is an attempt to solve the issue of inefficient pivots that create one large partition and one small partition. To combat this, I implented a system where looking at the first, middle, and last element of the partition, the element with the median value is chosen to be the pivot. This optimizes the chance of the selection of a good pivot. In contrast to the other sorts, here the random input seems to operate linearly or logarithmicly, while the reverse-ordered and ordered seem to oprtate quadratically. This doesn't make sense considering the nature of the algorithm. Thus, my algorithm or the recording of my data must have some error or inefficient compenent causing this to happen. One possible factor could be the fact that in my algorithm, rather than using the built in Swift string comparisons, I used my own lengthy functions, which may or may not have the same rules used by the sort function that created the ordered list. Thus, there may still be swaps and other operations occuring even in the ordered list. Aditionally, through running ordered input and printing the array to console after each partition, I was able to find a very strange occurrence, shown here:</p>
+
+      <img src="../../Images/OptimalSort/AlphaSortDiscrepancy.png" class="center" width="400" height="150" alt="Image failed to load">
+
+      <p class="generalText">Here, you can see that the algorithm takes the ordered text, scrambles it, then reorganizes it and returns it. Why this happens, I cannot answer, but I suspect that it may be linked to the ridiculously long time ordered input takes to be sorted. Despite the promised efficiency of the pivot selection medthod I use in my algorithm, it is slower than a plain quicksort algorithm. This can boil down to a few things: the discrepancy in sorting ordered text as shown in the image above, the use of my own string comparison system that assigns a series of number values to words rather tahn the default Swift string comparison system, and the possibility that choosing a better pivot takes more time than it does to simply move along with a mediocre pivot. Whether it's one of these issues or all of them, further testing will be needed on my part to determine how to tackle these obstacles. </p>
+
+      <br>
+
+      <h3 class="generalText">Sort Summary Graph</h3>
+
+      <img src="../../Images/OptimalSort/summary.png" class="center" height="675" width="1050" alt="Failed to load image.">
+
+      <br>
+
+      
+
+      <h3 class="generalText">Hypothesis: What Factors Affect Algorithmic Performance?</h3>
+  <figure>    <img src="../../Images/OptimalSort/Table.png" class="center" width="550" height="300" alt="Image failed to load"> <figcaption>*Note that Alphabetical Sort's best case scenario data is based off that of the algorithm in theory. Because of unknown factors, as of now it runs closer to O(n^2). </figcaption> </figure>
+      <p class="generalText">Looking at these algorithms, it is clear that there are factors that contribute to the performance of some and others that detract from it. For example, compared to the other algorithms, selection sort has horrendous performance with ordered input. This is because of the fact that there is no check to see if the algorithm is already sorted, and to sort even one misplaced item the entire algorithm will have to play out. Thus, selection sort is the only algorithm among these four to have a best case scenario time complexity of O(n^2). A factor that makes my algorithm stand out is its stellar performance under randomized input, with a time complexity of O(n(log(n)). I believe that is because of it's recursiveness, something that also sets it apart from the other sorts. Being recursive allows it to stop right when it is sorted, and use the same algorithm for smaller and smaller subsections of the array, speeding up the sorting process considerably. Whether the algorithm is stable (maintains the input order of elements with the same value) seems to be insignificant to performace, as the low performance bubble sort and my higher performance alphabetical sort are both unstable but have wildly different performances. Thus, I believe that the best ways to create a fast algorithm are to implement recursiveness and to allow the algorithm to stop as soon as it is sorted, without requiring any extra time delay or effort. Additionally, ssubdividing the array into smaller pieces and putting those pieces together takes less time, and algorithms that use this strategy are markedly faster than their counterparts.</p>
+
+
+      <br><br>
 
       <div><p class="bottom">Digital Portfolio can be found on GitHub <a href="https://onikh.github.io/index.html">here.</a>
 	</p>
-      </div> 
+      </div>
+      
 
 
       

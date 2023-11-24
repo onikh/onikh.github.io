@@ -1,0 +1,74 @@
+ * Serving Flask app 'ShelterAPI'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10465
+ * Running on http://192.168.16.4:10465
+[33mPress CTRL+C to quit[0m
+192.168.16.3 - - [21/Apr/2023 13:07:53] "[33mGET /api/tasks HTTP/1.1[0m" 404 -
+192.168.16.3 - - [21/Apr/2023 13:08:01] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:27:23] "[33mGET /index.html HTTP/1.1[0m" 404 -
+192.168.16.3 - - [21/Apr/2023 13:27:31] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:28:37] "[33mGET /index.html HTTP/1.1[0m" 404 -
+192.168.16.3 - - [21/Apr/2023 13:28:43] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:28:55] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:29:42] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:29:49] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:29:52] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:29:54] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:30:11] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:31:04] "[33mGET /index.html HTTP/1.1[0m" 404 -
+192.168.16.3 - - [21/Apr/2023 13:31:13] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:32:14] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:32:33] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:33:49] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [21/Apr/2023 13:34:02] "HEAD /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:31:58] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:32:53] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:35:06] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:35:48] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:39:58] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:41:12] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:41:31] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:43:01] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:43:42] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:43:56] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:43:57] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:50:23] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:50:30] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:50:31] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:52:31] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:52:31] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:52:35] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:54:47] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:54:51] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:55:57] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:56:49] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:56:58] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:58:40] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:58:45] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:58:55] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 00:59:39] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 01:58:49] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 01:59:20] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 01:59:26] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 01:59:32] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 01:59:55] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:10:56] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:11:06] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:11:23] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:26:37] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:28:17] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:28:58] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:29:15] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:29:31] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:29:53] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:30:10] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:30:13] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:39:43] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:39:52] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:39:53] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:39:54] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:40:30] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:40:37] "GET /get_shelters HTTP/1.1" 200 -
+192.168.16.3 - - [22/Apr/2023 02:40:38] "GET /get_shelters HTTP/1.1" 200 -

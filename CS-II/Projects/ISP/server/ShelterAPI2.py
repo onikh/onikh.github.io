@@ -1,0 +1,32 @@
+
+from flask import Flask, jsonify, request
+
+
+
+app = Flask(__name__)
+
+
+
+@app.route("/api/tasks", methods=["GET"])
+
+def get_shelters():
+    with open("./shelters.json") as data:
+        return (data.read()), 200, {"Content-Type" : "application/json"}
+        
+
+    
+# @app.route("add_shelters", methods=["POST"])
+
+# def add_shelters():
+#     pass
+
+
+
+# @app.route("edit_shelters", methods=["PATCH"])
+
+# def edit_shelters():
+#     pass  
+    
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=80, debug=True)

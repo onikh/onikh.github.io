@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Experiment3D/format.css">
+    <link rel="icon" href="rrt4car.PNG">
+    <title>ADVANCED SORTS</title>
+  </head>
+
+  <body>
+
+    <div class="CRTRainbow" id="rainbow"></div>
+    <div class="CRTFlicker" id="flicker"></div>
+
+    <img src="../../Experiment3D/pointer.png" class="cursor" id="mouse">
+    
+
+    <audio id="out" preload="auto">
+      <source src="audio/out.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio id="switch" preload="auto">
+      <source src="audio/switch.mp3" type="audio/mpeg">
+    </audio>
+
+        <audio id="on" preload="auto">
+      <source src="audio/on.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+	    <audio id="off" preload="auto">
+      <source src="audio/off.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+    
+   
+
+    
+    <div class="navBar" id="navBar">
+      <table class="navbarTable" id="table">
+	<tr>
+	  
+	  <td class="name" id="name"><p class="alignToBottom" style="font-size:50px">ONIK HOQUE</p></td>
+
+	  
+	  
+	  <td class="navBarTableElement" id="nameTD">
+	    <div class="alignToBottom"><a href="../index.html" class="blackLink">Home</a></div>
+	  </td>
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	    About
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Who I Am</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Why A Portfolio?</a></p>
+		<p class="dropDownElement"><a href="https://www.omamoka.com/ridge4/english/nonshocked/index.htm" class="grayLink">My Inspiration</a></p>
+	      </div>
+	    </div>
+		
+	  </td>
+
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	      Projects
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Pokémiguel</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Optimal Sort</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
+	      </div>
+	    </div>
+	  </td>
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	      Essays
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Fingerprints</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">AI Sentience</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Decision Bias</a></p>
+	      </div>
+	    </div>
+	  </td>
+	  
+	  
+	</tr>
+      </table>
+    
+      
+      <div class="blackLine" id="blackLine"></div>
+      
+    </div>
+
+
+    
+
+
+    <!-- END OF TOPBAR -->
+    <br>
+    <br>
+    <br>
+    
+    <div class="content">
+
+      
+      <p class="title">Advanced Sorts</p>
+
+      
+      <br>
+      <br>
+      <br>
+      
+
+      <p class="benHeader">Onik Hoque</p>
+      <p class="benHeader">Allen High School STEAM Center</p>
+      <p class="benHeader">Advanced Computer Science III</p>
+      <p class="benHeader">Mr. Ben-Yaakov</p>
+      <p class="benHeader">September 1, 2023</p>
+
+      <br>
+      <br>
+      <br>
+
+      <p class="subtitle">Merge Sort</p>
+      <p class="essay">Merge Sort is a recursive algorithm that begins with an unsorted array being split into two arrays, split usually at the middle index. Each of these arrays is continuously split into half until the arrays can no longer be split (there is only one element) at the bottom of the recursion tree. Here the arrays are put back together, but the elements in the halves are ordered this time as they are merged. As these are combined and ordered and the function goes back up the recursion tree, the array is sorted. Let's use an example: the array [4, 2, 3, 1] has a merge sort applied to it. First, it is split into [4, 2] and [3, 1].  These arrays are further split into [4] and [2], and [3] and [1]. Here they can no longer be divided, so we have reached the bottom of the recursion tree and can start merging the arrays. [4] and [2] are merged and ordered into [2, 4], and [3] and [1] are merged and ordered into [1, 3]. This leaves us with [2, 4] and [1, 3]. We merge these once again and we have [1, 2, 3, 4] and the merge has been completed as the individuals segments are combined into a singular array.</p>
+
+      <br>
+
+      <p class="subtitle">Quick Sort</p>
+      <p class="essay">Quick Sort is a recursive algorithm that divides and orders arrays in a manner reminiscient of Merge Sort, but using a different method. First, a pivot is selected from the array. This can be any value in the array, but for the sake of ease most sorts use the first or last value. The value of each element other than the pivot is compared to that of the pivot. If it is greater, it is removed from it's spot and placed after the pivot. If it is smaller, it is placed before the pivot. The way this is often done is that there are two iterations performed on the array at once. One starts from the back, and the other starts at the front. The iteration from the front moves forward until it finds a value greater than the pivot, then stops. The second interation moves from the back, until it finds a value less than the pivot. The values that the two iterations then swaps. When the two iterations meet in the middle, one section of the array has values greater than the pivot and the other side has values less than the pivot. The pivot is then moved to the correct location in between these sections.<br> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ At this point, we can divide the array into three distinct sections: values less than the pivot, the pivot element itself, and values greater than the pivot. The pivot is in the right position within the array, so we no longer have to change its location. Instead, we will repeat the same process with the values from the first element of the first section (less-than pivot values) to (but not including) the pivot. We also do this with the other side, from the element after the pivot to the end of the values greater than the pivot. Each time we repeat this process, the pivot element is put into its correct location. Eventually the array is split so that the partitioned arrays consist of one element at the bottom of the recursion tree. Once all branches of the recursion tree are terminated and the function returns to the top of the tree, the array is sorted.  </p>
+
+      <br>
+
+
+      <p class="subtitle">Heap Sort</p>
+      
+      <p class="essay">To begin heap sort, we must transfer the values of our unsorted array into a binary tree. These are structures based on branches and nodes. For example, when making a tree from [1, 4, 6, 3], 1 would be the main node. 4 and 6 would be off of branches from 1. 3 would be off a branch from 4. Then we must transform this into a max heap, where the parent nodes are greater than the nodes on their branches. We do this by comparing parent nodes with child noeds, and swapping them. After we swap, we move down and do this for every branch. In this case, our node at the top of the tree, 1, is less than 4, so we sould swap them. 4 is now at the top of the tree, 1 and 6 are child nodes of 4. Now we move down to the child node, which is now 1. The child node of 1 is 3, which is bigger, so we swap the two. We have reached the bottom of the tree, but there is another branch from the parent node at the very top of the tree (4) and its child (6). We swap these two and we have finished creating the max heap. Once the max heap is complete, we swap the root node (which is the maximum value in a max heap) with one of the nodes on the very extremities of the tree, like 1, and then remove the node on the extremity. Now that the root node is no longer the max, we have to repeat the same process and turn it to a max heap. Each time we do this, the maximum value is removed from the tree, so we can append the removed value to the front of an empty array each time and we will end with a sorted array. </p>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      
+    </div>
+
+
+
+    
+    
+
+    <!-- BEGINNING OF BOTTOMBAR -->
+
+
+    <div class="bottomBar" id="bottomBar">
+      <div class="blackLine"></div>
+      
+
+      <div class="buttonContainer">
+      <button class="crtToggle" id="crtToggle">
+	<img src="../../Images/crt.png" alt="image failed to load" class="buttonImage" id="CRTImage">
+      </button>
+      <div class="buttonText">Toggle CRT Effect</div>
+      </div>
+
+      
+    </div>
+
+  
+
+
+    
+
+
+
+    <script src="../../Scripts/main.js"></script>
+   
+    
+  </body>  
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../format.css">
+    <link rel="icon" href="rrt4car.PNG">
+    <title>About Me</title>
+  </head>
+
+  <body>
+
+    <div class="CRTRainbow" id="rainbow"></div>
+    <div class="CRTFlicker" id="flicker"></div>
+
+    <img src="../../Experiment3D/pointer.png" class="cursor" id="mouse">
+    
+
+    <audio id="out" preload="auto">
+      <source src="../Audio/out.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio id="switch" preload="auto">
+      <source src="../Audio/switch.mp3" type="audio/mpeg">
+    </audio>
+
+        <audio id="on" preload="auto">
+      <source src="audio/on.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+	    <audio id="off" preload="auto">
+      <source src="audio/off.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+    
+   
+
+    
+    <div class="navBar" id="navBar">
+      <table class="navbarTable" id="table">
+	<tr>
+	  
+	  <td class="name" id="name"><p class="alignToBottom" style="font-size:50px">ONIK HOQUE</p></td>
+
+	  
+	  
+	  <td class="navBarTableElement" id="nameTD">
+	    <div class="alignToBottom"><a href="../index.html" class="blackLink">Home</a></div>
+	  </td>
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	    About
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Who I Am</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Why A Portfolio?</a></p>
+		<p class="dropDownElement"><a href="https://www.omamoka.com/ridge4/english/nonshocked/index.htm" class="grayLink">My Inspiration</a></p>
+	      </div>
+	    </div>
+		
+	  </td>
+
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	      Projects
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Pokémiguel</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Optimal Sort</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
+	      </div>
+	    </div>
+	  </td>
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	      Essays
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Fingerprints</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">AI Sentience</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Decision Bias</a></p>
+	      </div>
+	    </div>
+	  </td>
+	  
+	  
+	</tr>
+      </table>
+    
+      
+      <div class="blackLine" id="blackLine"></div>
+      
+    </div>
+
+
+    
+
+
+    <!-- END OF TOPBAR -->
+    <br>
+    <br>
+    <br>
+    
+    <div class="content">
+
+      
+      <p class="title">Who I Am</p>
+
+      
+      <br>
+      <br>
+      <br>
+      
+
+  
+
+      <p class="subtitle">Summary</p>
+      <p class="essay">My name is Onik Hoque. I was born in Dallas, but grew up in Washington, DC and moved back to Dallas towards the end of elementary school. As of now, I'm a senior in high school interested in pursuing a career in computer science preceded by at least a bachelor's degree in computer science. In my free time, I like reading, programming, playing basketball, and being with friends and family.</p>
+
+      <p class="subtitle">Assorted Things I Like</p>
+      <ul class="essay">
+	<li>Portland Trail Blazers</li>
+	<li>Natural history</li>
+	<li>Arsenal FC</li>
+	<li>Pokemon</li>
+	<li>Nature walks</li>
+	<li>Playboi Carti</li>
+	<li>Samurai Champloo</li>
+	
+	
+	  
+	</ul>
+
+      <br>
+
+
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      
+    </div>
+
+
+
+    
+    
+
+    <!-- BEGINNING OF BOTTOMBAR -->
+
+
+    <div class="bottomBar" id="bottomBar">
+      <div class="blackLine"></div>
+      
+
+      <div class="buttonContainer">
+      <button class="crtToggle" id="crtToggle">
+	<img src="../../Images/crt.png" alt="image failed to load" class="buttonImage" id="CRTImage">
+      </button>
+      <div class="buttonText">Toggle CRT Effect</div>
+      </div>
+
+      
+    </div>
+
+  
+
+
+    
+
+
+
+    <script src="../Scripts/main.js"></script>
+   
+    
+  </body>  
+</html>

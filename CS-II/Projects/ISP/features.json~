@@ -1,0 +1,16 @@
+[
+    {
+    "id" : 1,
+    "name" : "Zoo",
+    "latitude" : 33.123806,
+    "longitude" : -96.67585
+},
+    {
+    "id" : 2,
+    "name": "School",
+    "latitude" : -39.0,
+    "longitude" : 40.2
+}
+    
+    
+]

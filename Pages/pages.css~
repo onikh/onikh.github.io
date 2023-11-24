@@ -1,0 +1,139 @@
+
+
+
+
+body{
+    background-color: powderblue;
+}
+
+table{
+    width: 100%;
+    background-color: #298EBF;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+  h1{
+      font-size: 50px;
+      font-family: "Trebuchet MS";
+  }
+
+  button{
+      border: none;
+      background-color: #298EBF;
+      font-size: 16px;
+      font-family: "Courier New";
+  }
+
+  button:hover{
+      color: white;
+      transition: 0.5s;
+  }
+
+  tr{
+     
+  }
+
+  td{
+      text-align: center;
+      border-collapse: collapse;
+      *width:1%
+  }
+
+  h2{
+      font-size: 35px;
+      font-family: "Courier New";
+  }
+
+  h3{
+      font-size: 28px;
+      font-family: "Courier New";
+  }
+
+  h4{
+      font-size: 20px;
+      font-family: "Courier New";
+  }
+
+  p{
+      font-family: "Trebuchet MS";
+  }
+
+
+  figcaption{
+      text-align: center;
+      font-family: "Trebuchet MS";
+      font-size: 12px;
+  }
+
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .essay{
+      text-indent: 50px;
+      line-height: 2;
+      margin-right: 25%;
+      margin-left: 25%;
+      *text-align: center;
+  }
+
+  .generalText{
+      margin-left:10%;
+      margin-right:10%;
+      *font-size:18px;
+  }
+
+  .generalHeader{
+      margin-left: 10%;
+      
+  }
+
+  .essayHeader{
+      *text-align: center;
+      margin-left: 25%;
+  }
+
+  .cited{
+      text-align: center;
+      
+      
+  }
+
+  .bottom{
+      position: fixed;
+      bottom: -16px;
+      text-align: right;
+      height: 30px;
+      width: 97%;
+      background-color: powderblue;	    
+  }
+
+  .hanging{
+      padding: 10px;
+      padding-left: 64px;
+      text-indent: -60px;
+      margin-left: 25%;
+      margin-right: 25%;
+      line-height: 2;
+      
+  }
+
+  .linkbarblue{
+      background-color: #30D3EA;
+  }
+
+  .centertxt{
+      text-align:center;
+  }
+
+  
+      
+  
+  
+      
+

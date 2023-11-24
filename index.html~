@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="format.css">
+  </head>
+
+
+  <div class="box1">TSET</div>
+  <div class="box2">SSS</div>
+  <div class="box3">S</div>
+  <div class="box4">SEG</div>
+    
+    <br>
+    
+    
+    <h1>Onik Hoque's Digital Portfolio</h1>
+    <h2></h2>
+    <h2>HOME</h2>
+    <body style="background-color:powderblue;">
+      <br>
+      <p>11th Grade Student at Allen High School.</p>
+      <p>This digital portfolio will contain my projects, information about me, and more.</P>
+      <img src="https://clipart.world/wp-content/uploads/2021/04/Icon-Computer-clipart-transparent.png" width="400" height="200">
+  </body>
+  </html>

@@ -1,0 +1,178 @@
+
+
+
+
+body{
+    background-color: powderblue;
+}
+
+table{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: sticky;
+    top: 0px;
+
+
+
+    
+}
+
+.centertxt{
+    text-align: center;
+}
+
+.centerImage{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+  h1{
+      font-size: 50px;
+      font-family: "Trebuchet MS";
+  }
+
+  button{
+      border: none;
+      background-color: #298EBF;
+      font-size: 16px;
+      font-family: "Courier New";
+  }
+
+  button:hover{
+      color: white;
+      transition: 0.5s;
+  }
+
+  td{
+      text-align: center;
+      border-collapse: collapse;
+      *width:1%
+  }
+
+  h2{
+      font-size: 35px;
+      font-family: "Courier New";
+  }
+
+  h3{
+      font-size: 28px;
+      font-family: "Courier New";
+  }
+
+  h4{
+      font-size: 20px;
+      font-family: "Courier New";
+  }
+
+  p{
+      font-family: "Trebuchet MS";
+      text-indent: 30px;
+  }
+
+  li{
+      font-family: "Trebuchet MS";
+  }
+
+
+
+
+  .generalText{
+      margin-left:25%;
+      margin-right:25%;
+      line-height: 1.5;
+      maximum-width: 900px;
+      *text-indent: 25px;
+      *font-size:18px;
+  }
+
+  .generalHeader{
+      margin-left: 10%;
+      line-height: 1;
+  }
+
+
+  .bottom{
+      position: fixed;
+      bottom: -16px;
+      text-align: right;
+      height: 30px;
+      width: 97%;
+      background-color: powderblue;	    
+  }
+
+  .dropDownButton{
+      border: none;
+      background-color: #298EBF;
+      font-size:16px;
+      font-family: "Courier New";
+ **     position: relative;
+   **   display:inline-block;
+      
+  }
+
+  .dropDown{
+      position: relative;
+      display: inline-block;
+  }
+
+  .dropDownContent{
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color:#298EBF;
+      z-index:1;
+      
+  }
+
+  .dropDown:hover .dropDownContent {
+      display: block;
+  }
+
+.dropDown:hover .dropDownButton {
+}
+
+
+.containerDiv{
+    width: 90%;
+    max-width: 700px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blackLine{
+    height: 2px;
+    background: black;
+    width: 100%
+}
+
+.smallNavTable{
+    width: 100%;
+    background: transparent;
+}
+
+.tableElement{
+    background: transparent;
+    text-align: center;
+    width: 25%;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    font-family: "Courier New";
+    text-decoration: none;
+    color: black;
+}
+
+hundredWText{
+    font-family: "Courier New";
+    line-height: 1.5;
+}

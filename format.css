@@ -1,140 +1,528 @@
+:root {
+}
 
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(78, 78, 79, 255) #e0a90b;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 30px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: ##e0a90b;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(78, 78, 79, 255);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+  
+  
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+    *border: 1px dotted;
+    cursor: none;
+    user-select: none;
+}
+
+@font-face{
+    font-family: "Terminal";
+    src: url(Fonts/Terminal.ttf);
+}
+
+@font-face{
+    font-family: "Atlantis";
+    src: url(Fonts/Atlantis.ttf);
+}
 
 
 body{
-    background-color: powderblue;
+    height: 100%;
+    background: #fabb07;
+    *background: white;
+   *overflow: hidden;
 }
 
-table{
+.cursor{
+    position: absolute;
+    *display: none;
+    transform: translate(38px, 34px);
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+
+
+.navBar{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    height: 12vh;
+    width: calc(100% - 100px);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 70px;
+    background: #fabb07;
+}
+
+.navbarTable{
     width: 100%;
-    background-color: #298EBF;
-    margin-left: 0px;
-    margin-right: 0px;
+    height: 100%;
+}
+
+.coverPanel{
+    top: 0%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    animation: 0.4s revealText forwards;
+    background: #fabb07;
+    animation-delay: 0.37s;
+}
+
+@keyframes revealText {
+    from {
+	height: 100%;
+    }
+
+    to {
+	height: 0%;
+    }
 }
 
 
 
-  h1{
-      font-size: 50px;
-      font-family: "Trebuchet MS";
-  }
-
-  button{
-      border: none;
-      background-color: #298EBF;
-      font-size: 16px;
-      font-family: "Courier New";
-  }
-
-  button:hover{
-      color: white;
-      transition: 0.5s;
-  }
-
-  tr{
-     
-  }
-
-  td{
-      text-align: center;
-      border-collapse: collapse;
-      *width:1%
-  }
-
-  h2{
-      font-size: 35px;
-      font-family: "Courier New";
-  }
-
-  h3{
-      font-size: 28px;
-      font-family: "Courier New";
-  }
-
-  h4{
-      font-size: 20px;
-      font-family: "Courier New";
-  }
-
-  p{
-      font-family: "Trebuchet MS";
-  }
 
 
-  figcaption{
-      text-align: center;
-      font-family: "Trebuchet MS";
-      font-size: 12px;
-  }
 
-  .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
+.CRTRainbow {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 5;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
 
-  .essay{
-      text-indent: 50px;
-      line-height: 2;
-      margin-right: 25%;
-      margin-left: 25%;
-      *text-align: center;
-  }
 
-  .generalText{
-      margin-left:10%;
-      margin-right:10%;
-      *text-indent: 25px;
-      *font-size:18px;
-  }
 
-  .generalHeader{
-      margin-left: 10%;
-      
-  }
+@keyframes flicker {
+    0% {
+	opacity: 0.27861;
+    }
+    5% {
+	opacity: 0.34769;
+    }
+    10% {
+	opacity: 0.23604;
+    }
+    15% {
+	opacity: 0.90626;
+    }
+    20% {
+	opacity: 0.18128;
+    }
+    25% {
+	opacity: 0.83891;
+    }
+    30% {
+	opacity: 0.65583;
+    }
+    35% {
+	opacity: 0.67807;
+    }
+    40% {
+	opacity: 0.26559;
+    }
+    45% {
+	opacity: 0.84693;
+    }
+    50% {
+	opacity: 0.96019;
+    }
+    55% {
+	opacity: 0.08594;
+    }
+    60% {
+	opacity: 0.20313;
+    }
+    65% {
+	opacity: 0.71988;
+    }
+    70% {
+	opacity: 0.53455;
+    }
+    75% {
+	opacity: 0.37288;
+    }
+    80% {
+	opacity: 0.71428;
+    }
+    85% {
+	opacity: 0.70419;
+    }
+    90% {
+	opacity: 0.7003;
+    }
+    95% {
+	opacity: 0.36108;
+    }
+    100% {
+	opacity: 0.24387;
+    }
+}
 
-  .essayHeader{
-      *text-align: center;
-      margin-left: 25%;
-  }
+.CRTFlicker {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+    animation: flicker 0.3s infinite;
+}
 
-  .cited{
-      text-align: center;
-      
-      
-  }
+.blackLink{
+    text-decoration: none;
+    color: black;
+    font-family: "Terminal";    
+}
 
-  .bottom{
-      position: fixed;
-      bottom: -16px;
-      text-align: right;
-      height: 30px;
-      width: 97%;
-      background-color: powderblue;	    
-  }
+.grayLink{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: "Terminal";
+    width: 100%;
+}
 
-  .hanging{
-      padding: 10px;
-      padding-left: 64px;
-      text-indent: -60px;
-      margin-left: 25%;
-      margin-right: 25%;
-      line-height: 2;
-      
-  }
+.dropDownElement:hover .grayLink{
+    animation: blinkingText .6s infinite;
+}
+.blackLink:hover{
+    animation: blinkingTextBlack .6s infinite;
+}
 
-  .linkbarblue{
-      background-color: #30D3EA;
-  }
+a:visited {
+    text-decoration: none;
+}
 
-  .centertxt{
-      text-align:center;
-  }
 
-  
-      
-  
-  
-      
+
+    
+.name{
+    *width: 60%;
+    font-family: "Terminal";
+    font-size: 50px;
+    padding-left: 4px;
+    padding-bottom: 0px;
+    letter-spacing: .5px;
+    vertical-align: bottom;
+    min-width: 281px;
+    
+}
+
+
+
+.navBarTableElement{
+    width: 150px;
+    *max-width: 130px;
+    *min-width: 40px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    vertical-align: bottom;
+    font-family: "Terminal";
+    font-size: 35px;
+}
+
+.dropDownContent{
+    display: block;
+    position: absolute;
+    *z-index: 1;
+
+
+}
+
+.dropDownElement{
+    font-family:s "Terminal";
+    font-size: 16px;
+    height: 30px;
+    width: 0px;
+    background: rgba(78,78,79,255);
+    border: 2px solid white;
+    color: white;
+    margin-top: 10px;
+    line-height: 30px; 
+    text-align: left;
+    padding-left: 2px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: width .5s, visibility .45s 0s;
+}
+
+.dropdown:hover .dropDownElement{
+   width: 120px;
+   transition: .5s;
+   visibility: visible;  
+}
+
+
+
+@keyframes blinkingText{
+    0%{color: white;}
+    25%{color: black;}
+    50%{color: black;}
+    75%{color: white;}
+}
+
+@keyframes blinkingTextBlack{
+    0%{color: black;}
+    25%{color: white;}
+    50%{color: white;}
+    75%{color: black;}
+    
+}
+
+.alignToBottom{
+    vertical-align: bottom;
+    font-family: "Terminal";
+    font-size: 35px;
+    position: relative;
+}
+
+.blackLine{
+    background: black;
+    height: 2px;
+    width: 100%;
+    animation: .5s slideIn;
+}
+
+
+
+@keyframes slideIn {
+    0% {
+	width: 0px;
+    }
+    100% {
+	width: 100%;
+    }
+}
+
+.bottomBar{
+    z-index: 2;
+    position: fixed;
+    bottom: 0px;
+    *height: 95px;
+    height: 12%;
+    min-height: 70px;
+    width: calc(100% - 100px);
+    max-width: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+    *border: 2px dotted green;
+    margin-left:auto;
+    margin-right: auto;
+    background: #fabb07;
+}
+
+.buttonContainer {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+
+.crtToggle{
+    height: calc(100% - 30px);
+    width: 100px;
+    border: none;
+    background: transparent;
+}
+
+.buttonImage{
+    height: 100%;
+    width: auto;
+    font-size: 100px;
+    font-family: "Terminal";
+}
+
+.buttonText{
+    font-family: "Atlantis";
+    font-size: clamp(10px, 1.5vh, 30px);
+    line-height: 20px;
+    width: 100%
+}
+
+
+
+
+
+/* CAR STUFF */
+
+.nameContainer{
+    *z-index: 1;
+    margin:auto;
+    background: transparent;
+    height: 150%; 
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.nameText{
+    background: yellow;
+    display: none; 
+    position: absolute;
+    *z-index: 9;   
+    width:100%;
+    top: calc(50% - 15px);
+    border-style: double;
+    
+}
+
+
+.canvas{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    perspective: 10000px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box{
+    *background: indianred;
+    height:592px;
+    width:100%;
+    font-size: 5px;
+    display: inline-block;
+    position:relative;
+    transform-style: preserve-3d;
+}
+
+
+
+.box{
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+	transform: rotateY(0deg) rotateX(-0deg) rotateZ(0deg);
+    }
+    to {
+	transform: rotateY(359deg) rotateX(-00deg) rotateZ(0deg);
+    }
+}
+
+.webgl{
+    *border: 5px dotted blue;
+    *height:80vh;
+    *width: calc(100vw - 100px);
+    *max-width: 1500px;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+.AfterThisIsFormatting{
+}
+
+
+				
+.essay{
+    text-indent: 50px;
+    line-height: 2;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: left;
+ *   border-style: solid;
+    font-family: "Terminal";
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+.content{  
+    width: calc(100% - 100px);
+    text-align: center;
+    margin: auto;
+    font-family: "Terminal";
+    max-width: 1500px;
+    *background: red;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.title{
+    text-align: left;
+    font-family: "Terminal";
+    font-size: 64px;
+    padding: 8px;
+}
+
+.subtitle{
+    text-align: left;
+    font-family: "Terminal";
+    font-size: 35px;
+    line-height: 2;
+    margin-right: 25%;
+    margin-left: 25%;
+   
+  *  border-style: solid;
+
+    
+}
+    
+
+.benHeader{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Terminal";
+    line-height: 1.5;
+}
+
+ul {
+    font-family: "Terminal";
+}
+
+
 
