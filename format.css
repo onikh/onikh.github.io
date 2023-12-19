@@ -45,12 +45,70 @@
 }
 
 
+
+
 body{
     height: 100%;
     background: #fabb07;
     *background: white;
    *overflow: hidden;
 }
+
+#overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fabb07;
+    z-index: 4;
+    text-align: center;
+    font-family: "Terminal";
+}
+
+.overlayButton{
+    font-family: "Terminal";
+    background-color: transparent;
+    border: none;
+    opacity: inherited;
+    font-size: 30px;
+   *pointer-events: inherited;
+}
+
+#overlayText{
+    text-align: center;
+    font-family: "Terminal";
+    font-size: 40px;
+}
+
+.selectionArrow {
+    vertical-align: middle;
+    padding-bottom: 1em;
+    font-size: 50%;
+    margin-right: -5px;
+    opacity: 0;
+    *pointer-events: none;
+}
+.overlayButtonContainer{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    opacity: 0;
+    *pointer-events: none;
+}
+
+.overlayButtonContainer:hover .selectionArrow {
+    opacity: 1;
+}
+
+
+
+
+    
 
 .cursor{
     position: absolute;
@@ -199,7 +257,7 @@ body{
     opacity: 0;
     z-index: 5;
     pointer-events: none;
-    animation: flicker 0.3s infinite;
+    animation: flicker 0.6s infinite;
 }
 
 .blackLink{
@@ -357,6 +415,7 @@ a:visited {
     display: inline-block;
     height: 100%;
     text-align: center;
+    position: relative;
 }
 
 .crtToggle{
@@ -384,64 +443,6 @@ a:visited {
 
 
 
-/* CAR STUFF */
-
-.nameContainer{
-    *z-index: 1;
-    margin:auto;
-    background: transparent;
-    height: 150%; 
-    width: 100%;
-    position: relative;
-    text-align: center;
-}
-
-.nameText{
-    background: yellow;
-    display: none; 
-    position: absolute;
-    *z-index: 9;   
-    width:100%;
-    top: calc(50% - 15px);
-    border-style: double;
-    
-}
-
-
-.canvas{
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    position: relative;
-    perspective: 10000px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.box{
-    *background: indianred;
-    height:592px;
-    width:100%;
-    font-size: 5px;
-    display: inline-block;
-    position:relative;
-    transform-style: preserve-3d;
-}
-
-
-
-.box{
-    animation: rotation 20s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-	transform: rotateY(0deg) rotateX(-0deg) rotateZ(0deg);
-    }
-    to {
-	transform: rotateY(359deg) rotateX(-00deg) rotateZ(0deg);
-    }
-}
 
 .webgl{
     *border: 5px dotted blue;

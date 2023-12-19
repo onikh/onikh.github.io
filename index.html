@@ -12,31 +12,54 @@
 
   <body>
 
+    <div id="overlay">
+      <div id="overlayText"></div>
+      <br>
+
+      <div class="overlayButtonContainer" style="opacity:0;">
+      <span class="selectionArrow">▶</span>
+      <button type="button" class="overlayButton" id="soundButtonYes" onclick="overlayButtonAction(this)">Yes</button>
+      </div>
+      
+      <br>
+
+      <div class="overlayButtonContainer" style="opacity:0;">
+	<span class="selectionArrow">▶</span>
+        <button type="button" class="overlayButton" id="soundButtonNo" onclick="overlayButtonAction(this)">No</button>
+      </div>
+
+
+    </div>
+
     <div class="CRTRainbow" id="rainbow"></div>
     <div class="CRTFlicker" id="flicker"></div>
 
     <img src="Images/pointer.png" class="cursor" id="mouse">
     
 
-    <audio id="out" preload="auto">
+    <audio class="sfx" id="out" preload="auto">
       <source src="./Audio/out.mp3" type="audio/mpeg">
       Your browser doesn't support audio
     </audio>
 
-    <audio id="switch" preload="auto">
+    <audio class="sfx" id="switch" preload="auto">
       <source src="Audio/switch.mp3" type="audio/mpeg">
     </audio>
 
-        <audio id="on" preload="auto">
+        <audio class="sfx" id="on" preload="auto">
       <source src="Audio/on.wav" type="audio/wav">
       Your browser doesn't support audio
     </audio>
 
-	    <audio id="off" preload="auto">
+	    <audio class="sfx" id="off" preload="auto">
       <source src="Audio/off.wav" type="audio/wav">
       Your browser doesn't support audio
     </audio>
 
+    <audio id="music" preload="auto">
+      <source src="./Audio/moveme.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
     
    
 
@@ -52,7 +75,7 @@
 	  <td class="navBarTableElement" id="nameTD">
 	    <div class="alignToBottom">
 	      <div class="coverPanel"></div>
-	      <a href="../index.html" class="blackLink">Home</a></div>
+	      <a href="./index.html" class="blackLink">Home</a></div>
 	  </td>
 
 	  
@@ -122,8 +145,9 @@
       
 
       <div class="buttonContainer">
+	<div class="coverPanel" style="bottom:0%; top:auto;"></div>
       <button class="crtToggle" id="crtToggle">
-	<img src="../Images/crt.png" alt="image failed to load" class="buttonImage" id="CRTImage">
+	<img src="Images/crtdisabled.png" alt="image failed to load" class="buttonImage" id="CRTImage">
       </button>
       <div class="buttonText">Toggle CRT Effect</div>
       </div>
@@ -136,10 +160,11 @@
 
     
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="Scripts/main.js"></script>
     <script type="module" src="Scripts/model.js"></script>
+
     
   </body>  
 </html>
