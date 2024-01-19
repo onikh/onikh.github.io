@@ -1,0 +1,52 @@
+
+
+//document.addEventListener('DOMContentLoaded', function() {
+    var upperCoverPanels = document.querySelectorAll(".coverPanel");
+var blackLines = document.querySelectorAll(".blackLine");
+var contentCoverPanel = document.getElementById("contentCoverPanel");
+
+
+var animationsTriggered = false;
+
+function entranceAnimation() {
+    
+    upperCoverPanels.forEach(function(element) {
+	element.classList.add("coverPanelAnimated");	
+    });
+
+    blackLines.forEach(function(element) {
+	element.classList.add("blackLineAnimated");
+    });
+
+    contentCoverPanel.classList.add("contentCoverPanelReveal");
+
+    console.log("entrancceAnimation");
+
+
+  	
+    
+}
+
+
+contentCoverPanel.addEventListener('animationend', function() {
+
+    if (contentCoverPanel.classList.contains("contentCoverPanelReveal")) {
+	contentCoverPanel.style.display = "none";
+
+
+
+
+	
+    } else if (contentCoverPanel.classList.contains("contentCoverPanelHide")) {
+	contentCoverPanel.style.display = "initial";
+    }
+	
+	
+	});
+
+
+
+
+function contentCoverPanelEntrance() {
+    contentCoverPanel.classList.add("contentCoverPanelReveal");
+}

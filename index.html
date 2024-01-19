@@ -135,7 +135,23 @@
 
 
     <!-- END OF TOPBAR -->
-    <canvas class="webgl" id="canvas"></canvas>
+
+
+    
+    <div class="content">
+      <div id="contentCoverPanel"></div>
+      <canvas id="canvas3D"></canvas>
+      <div id="textBox">
+	<img src="./Images/messageBoxLeft.png" alt="Image could not load" id="textBoxImgLeft" loading="eager"></img>
+	<img src="./Images/messageBoxRight.png" alt="Image could not load" id="textBoxImgRight" loading="eager"></img>
+	<div id="nameText"></div>
+	
+      </div>
+    </div>
+    
+
+
+    
 
     <!-- BEGINNING OF BOTTOMBAR -->
 
@@ -162,8 +178,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
+    <script src="Scripts/animation.js"></script>
+    <script src="Scripts/cookies.js"></script>
+    <script src="Scripts/cursor.js"></script>
+
+    <script src="Scripts/SFX.js"></script>
+    <script src="Scripts/CRTButton.js"></script>
     <script src="Scripts/main.js"></script>
+   
     <script type="module" src="Scripts/model.js"></script>
+    
 
     
   </body>  

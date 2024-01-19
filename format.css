@@ -65,7 +65,7 @@ body{
     width: 100%;
     height: 100%;
     background: #fabb07;
-    z-index: 4;
+    z-index: 10;
     text-align: center;
     font-family: "Terminal";
 }
@@ -116,7 +116,7 @@ body{
     transform: translate(38px, 34px);
     top: 0px;
     left: 0px;
-    z-index: 4;
+    z-index: 10;
     pointer-events: none;
     overflow: hidden;
 }
@@ -147,10 +147,17 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 10;
-    animation: 0.4s revealText forwards;
+    z-index: 5;
     background: #fabb07;
+}
+
+.coverPanelAnimated{
+    animation: 0.4s revealText forwards;
     animation-delay: 0.37s;
+}
+
+.reverse{
+    animation-direction: reverse;
 }
 
 @keyframes revealText {
@@ -325,8 +332,6 @@ a:visited {
     display: block;
     position: absolute;
     *z-index: 1;
-
-
 }
 
 .dropDownElement{
@@ -380,6 +385,9 @@ a:visited {
     background: black;
     height: 2px;
     width: 100%;
+}
+
+.blackLineAnimated{
     animation: .5s slideIn;
 }
 
@@ -444,11 +452,9 @@ a:visited {
 
 
 
-.webgl{
-    *border: 5px dotted blue;
-    *height:80vh;
-    *width: calc(100vw - 100px);
-    *max-width: 1500px;
+
+
+#canvas3D{
     padding-left: 0;
     padding-right: 0;
     display: block;
@@ -475,10 +481,86 @@ a:visited {
 }
 
 
+#contentCoverPanel{
+    top: 2px;
+    position: absolute;
+    height: calc(100% - 2px);
+    width: 100%;
+    z-index: 3;
+    background: #fabb07;
+}
+
+.contentCoverPanelReveal {
+    animation: 0.4s revealContent forwards;
+    animation-delay: 0.4s;
+}
+
+.contentCoverPanelHide {
+    animation: 0.4s hideContent forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes revealContent {
+    from {
+	opacity: 1;
+    }
+
+    to {
+	opacity: 0;
+    }
+}
+
+@keyframes hideContent {
+    from {
+	opacity: 0;
+    }
+
+    to {
+	opacity: 1;
+    }
+}
+
+#textBox {
+    position: absolute;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    *background: red;
+    height: 35%;
+    min-height: 257px;
+    width: 96%;
+}
 
 
 
+	
 
+#textBoxImgLeft{
+    position:absolute;
+    height: 100%;
+    width: 200px;
+    left: 0px;
+    image-rendering: pixelated;
+}
+
+#textBoxImgRight{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 200px);
+    right: 0px;
+    image-rendering: pixelated;
+}
+
+#nameText{
+    position: absolute;
+    font-size: 35px;
+    font-family: "Terminal";
+    left: 30px;
+    top: 6px;
+    color: white;
+}
 
 .content{  
     width: calc(100% - 100px);
@@ -489,6 +571,8 @@ a:visited {
     *background: red;
     overflow-x: hidden;
     overflow-y: auto;
+    display:block;
+    position: relative;
 }
 
 

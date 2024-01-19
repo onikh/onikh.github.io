@@ -5,7 +5,7 @@ import { OrbitControls } from "https://unpkg.com/three@0.126.0/examples/jsm/cont
 
 
 
-const canvas = document.getElementById("canvas");
+const canvas3D = document.getElementById("canvas3D");
 const scene = new THREE.Scene();
 
 var object = new THREE.Object3D()
@@ -55,7 +55,7 @@ camera.position.set(2,1,2);
 //scene.add(camera);
 
 const renderer = new THREE.WebGLRenderer({
-    canvas: canvas,
+    canvas: canvas3D,
     alpha: true
 });
 renderer.setClearColor(0xffffff, 0);
@@ -64,7 +64,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.shadowMap.enabled = true;
 renderer.gammaOutput = true;
 
-var controls = new OrbitControls(camera,canvas);
+var controls = new OrbitControls(camera,canvas3D);
 controls.autoRotate = true;
 
 renderer.render(scene, camera);
