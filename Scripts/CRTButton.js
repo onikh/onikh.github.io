@@ -5,7 +5,8 @@ function toggleCRT() {
 	document.getElementById("rainbow").style.display = "none";
 	document.getElementById("flicker").style.display = "none";
 	document.getElementById("CRTImage").src= "Images/crtdisabled.png";
-	buttonClickSound();
+	//buttonClickSound();
+	dialogueBlipSound();
 	CRT = false;
     } else if (CRT == false) {
 	document.getElementById("rainbow").style.display = "block";
