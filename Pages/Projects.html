@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../format.css">
+    <link rel="stylesheet" href="timelines.css">
+    <link rel="icon" href="rrt4car.PNG">
+    <title>LEVEL SELECT</title>
+  </head>
+
+  <body>
+
+  
+
+    </div>
+
+    <div class="CRTRainbow" id="rainbow"></div>
+    <div class="CRTFlicker" id="flicker"></div> 
+
+    <audio class="sfx" id="out" preload="auto">
+      <source src="./Audio/out.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio class="sfx" id="switch" preload="auto">
+      <source src="Audio/switch.mp3" type="audio/mpeg">
+    </audio>
+
+        <audio class="sfx" id="on" preload="auto">
+      <source src="Audio/on.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+	    <audio class="sfx" id="off" preload="auto">
+      <source src="Audio/off.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio id="music" preload="auto">
+      <source src="./Audio/moveme.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio class="sfx" id="dialogue" preload="auto">
+      <source src="./Audio/dialogue.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+    
+   
+  <!-- BEGINNING OF NAVBAR -->
+    
+    <div class="navBar" id="navBar">
+      <table class="navbarTable" id="table">
+	<tr>
+	  
+	  <td class="name" id="name"><div class="alignToBottom" style="font-size:50px"><div class="coverPanel"></div>ONIK HOQUE</div></td>
+
+	  
+	  
+	  <td class="navBarTableElement">
+	    <div class="alignToBottom">
+	      <div class="coverPanel"></div>
+	      <a href="../index.html" class="blackLink">Home</a></div>
+	  </td>
+
+
+	    <td class="navBarTableElement">
+	    <div class="dropdown">
+	      <div class="coverPanel"></div>
+	      <a href="./AboutMe.html" class="blackLink">About</a>
+	      <div class="dropDownContent">
+		<div class="dropDownElement">
+		  <p class="dropDownText">resume, contact info, </p>
+		 <p class="dropDownText">fun facts abt me</p>
+		</div>
+	      </div>
+	    </div>
+	  </td>
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	      <div class="coverPanel"></div>
+	      <a href="./Projects.html" class="blackLink">Projects</a>
+	      <div class="dropDownContent">
+		<div class="dropDownElement">
+		  <p class="dropDownText">a timeline of my</p>
+		  <p class="dropDownText">projects/experiences</p>
+		</div>
+	      </div>
+	    </div>
+	  </td>
+	  
+
+	  
+	  
+	</tr>
+      </table>
+    
+      
+      <div class="blackLine" id="blackLine"></div>
+      
+    </div>
+
+
+    
+
+
+    <!-- END OF TOPBAR -->
+
+    <div class="content">
+
+      <br>
+
+      <h1 class="title">Timeline</p>
+
+
+<div class="timeline">
+  
+  <div class="container left">
+    <div class="timelineContent">
+      <h1 class="subtitle">Pokemiguel</h2>
+      <h1 class="subtitle2">Feb 2022 - May 2022</h1>
+      <p class="essay2">My first actual project, Pokemiguel is a top down turn based battle RPG inspired by Pokemon. This was my first computer science experience, and even though the final game only takes about 15 minutes to complete, making it presented quite the challenge and it was a great learning experience.</p>
+    </div>
+  </div>
+  
+  <div class="container right">
+    <div class="timelineContent">
+      <h2 class="subtitle">ShelterSafe</h2>
+      <h1 class="subtitle2">Dec 2022 - March 2023</h1>
+      <p class="essay2">ShelterSafe was intended to be an app where organizations like the Red Cross and federal government could add temporary shelters to a map in case of disaster, as temporary shelters aren't often listed online. Although I wasn't able to complete it, the experience was integral to my next app, Swish Lab, listed below.</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="timelineContent">
+      <h1 class="subtitle">Automated Attendance</h2>
+      <h1 class="subtitle2">Feb 2022</h1>
+      <p class="essay2">This project was very brief and simple, but it was the first time I was able to use my skills for something that helped with a real life issue. My high school's Key Club used Google Forms for attendance, which was inefficient. I made a system that could use an ID scanner to record attendance in a CSV file to easily track attendance.</p>
+      <p class="essay"></p>
+    </div>
+</div>
+
+<div class="container right">
+    <div class="timelineContent">
+      <h2 class="subtitle">Swish Lab</h2>
+      <h2 class="subtitle2">Nov 2023 - March 2024</h2>
+	<video class="video" width=400 controls>
+	  <source src="./ProjectImages/SwishLab.mp4">
+	</video>
+<p class="essay2">This app allows uses object detection to track a basketball and a rim, alloing users to visualize their training sessions and gauge their shooting efficiency over time. It even offers a friend system that uses Firebase, where users can send each other friend requests and view each other's stats and recent training sessions. The app's logic was the easy part: it was definitely making the model that took me the longest.</p>
+<p class="essay2">The app is available for download on iPhones as an open beta on TestFlight at the link here: https://testflight.apple.com/join/MWslqJyf</p>
+    </div>
+  </div>
+
+<div class="container left">
+    <div class="timelineContent">
+      <h1 class="subtitle">Vehicle Gesture Recognition</h2>
+      <h1 class="subtitle2">March 2023 - Present</h1>
+      <p class="essay2">I'm currently making a system with an arduino that will connect to the stereo of a vehicle. A device with an infrared sensor can be placed on the dash, and motioning in front of the device will allow users to skip songs, change the volume, and even pick up calls.</p>
+      <p class="essay"></p>
+    </div>
+  </div>
+
+  
+    </div>
+
+    </div>
+
+
+
+
+    
+    
+
+
+    
+
+    <!-- BEGINNING OF BOTTOMBAR -->
+
+
+    <div class="bottomBar" id="bottomBar">
+      <div class="blackLine"></div>
+      
+
+      <div class="buttonContainer">
+	<div class="coverPanel" style="bottom:0%; top:auto;"></div>
+      <button class="crtToggle" id="crtToggle">
+	<img src="../Images/crtdisabled.png" alt="image failed to load" class="buttonImage" id="CRTImage">
+      </button>
+      <div class="buttonText">Toggle CRT Effect</div>
+      </div>
+
+      
+    </div>
+
+  
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../Scripts/animation.js"></script>
+
+    <script src="../Scripts/SFX.js"></script>
+    <script src="./CRTButton.js"></script>
+    <script src="../Scripts/main.js"></script>
+   
+    <script type="module" src="../Scripts/model.js"></script>
+    
+
+    
+  </body>  
+</html>

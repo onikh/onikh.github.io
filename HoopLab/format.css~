@@ -1,0 +1,620 @@
+:root {
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(78, 78, 79, 255) #e0a90b;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 30px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: ##e0a90b;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(78, 78, 79, 255);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+  
+  
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+    *border: 1px dotted;
+    cursor: none;
+    user-select: none;
+}
+
+@font-face{
+    font-family: "Terminal";
+    src: url(Fonts/Terminal.ttf);
+}
+
+@font-face{
+    font-family: "Atlantis";
+    src: url(Fonts/Atlantis.ttf);
+}
+
+
+
+
+body{
+    height: 100%;
+    background: #fabb07;
+    *background: white;
+   *overflow: hidden;
+}
+
+#overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fabb07;
+    z-index: 10;
+    text-align: center;
+    font-family: "Terminal";
+}
+
+.overlayButton{
+    font-family: "Terminal";
+    background-color: transparent;
+    border: none;
+    opacity: inherited;
+    font-size: 30px;
+   *pointer-events: inherited;
+}
+
+#overlayText{
+    text-align: center;
+    font-family: "Terminal";
+    font-size: 40px;
+}
+
+.selectionArrow {
+    vertical-align: middle;
+    padding-bottom: 1em;
+    font-size: 50%;
+    margin-right: -5px;
+    opacity: 0;
+    *pointer-events: none;
+}
+.overlayButtonContainer{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    opacity: 0;
+    *pointer-events: none;
+}
+
+.overlayButtonContainer:hover .selectionArrow {
+    opacity: 1;
+}
+
+
+
+
+    
+
+.cursor{
+    position: absolute;
+    *display: none;
+    transform: translate(38px, 34px);
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+
+
+.navBar{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    height: 12vh;
+    width: calc(100% - 100px);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 70px;
+    background: #fabb07;
+}
+
+.navbarTable{
+    width: 100%;
+    height: 100%;
+}
+
+.coverPanel{
+    top: 0%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: #fabb07;
+}
+
+.coverPanelAnimated{
+    animation: 0.4s revealText forwards;
+    animation-delay: 0.37s;
+}
+
+.reverse{
+    animation-direction: reverse;
+}
+
+@keyframes revealText {
+    from {
+	height: 100%;
+    }
+
+    to {
+	height: 0%;
+    }
+}
+
+
+
+
+
+
+.CRTRainbow {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 5;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+
+
+@keyframes flicker {
+    0% {
+	opacity: 0.27861;
+    }
+    5% {
+	opacity: 0.34769;
+    }
+    10% {
+	opacity: 0.23604;
+    }
+    15% {
+	opacity: 0.90626;
+    }
+    20% {
+	opacity: 0.18128;
+    }
+    25% {
+	opacity: 0.83891;
+    }
+    30% {
+	opacity: 0.65583;
+    }
+    35% {
+	opacity: 0.67807;
+    }
+    40% {
+	opacity: 0.26559;
+    }
+    45% {
+	opacity: 0.84693;
+    }
+    50% {
+	opacity: 0.96019;
+    }
+    55% {
+	opacity: 0.08594;
+    }
+    60% {
+	opacity: 0.20313;
+    }
+    65% {
+	opacity: 0.71988;
+    }
+    70% {
+	opacity: 0.53455;
+    }
+    75% {
+	opacity: 0.37288;
+    }
+    80% {
+	opacity: 0.71428;
+    }
+    85% {
+	opacity: 0.70419;
+    }
+    90% {
+	opacity: 0.7003;
+    }
+    95% {
+	opacity: 0.36108;
+    }
+    100% {
+	opacity: 0.24387;
+    }
+}
+
+.CRTFlicker {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+    animation: flicker 0.6s infinite;
+}
+
+.blackLink{
+    text-decoration: none;
+    color: black;
+    font-family: "Terminal";    
+}
+
+.grayLink{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: "Terminal";
+    width: 100%;
+}
+
+.dropDownElement:hover .grayLink{
+    animation: blinkingText .6s infinite;
+}
+.blackLink:hover{
+    animation: blinkingTextBlack .6s infinite;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+
+    
+.name{
+    *width: 60%;
+    font-family: "Terminal";
+    font-size: 50px;
+    padding-left: 4px;
+    padding-bottom: 0px;
+    letter-spacing: .5px;
+    vertical-align: bottom;
+    min-width: 281px;
+    
+}
+
+
+
+.navBarTableElement{
+    width: 150px;
+    *max-width: 130px;
+    *min-width: 40px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    vertical-align: bottom;
+    font-family: "Terminal";
+    font-size: 35px;
+}
+
+.dropDownContent{
+    display: block;
+    position: absolute;
+    *z-index: 1;
+}
+
+.dropDownElement{
+    font-family: "Terminal";
+    font-size: 16px;
+    height: 30px;
+    width: 0px;
+    background: rgba(78,78,79,255);
+    border: 2px solid white;
+    color: white;
+    margin-top: 10px;
+    line-height: 30px; 
+    text-align: left;
+    padding-left: 2px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: width .5s, visibility .45s 0s;
+}
+
+.dropdown:hover .dropDownElement{
+   width: 100%;
+   transition: .5s;
+   visibility: visible;  
+}
+
+
+
+@keyframes blinkingText{
+    0%{color: white;}
+    25%{color: black;}
+    50%{color: black;}
+    75%{color: white;}
+}
+
+@keyframes blinkingTextBlack{
+    0%{color: black;}
+    25%{color: white;}
+    50%{color: white;}
+    75%{color: black;}
+    
+}
+
+.alignToBottom{
+    vertical-align: bottom;
+    font-family: "Terminal";
+    font-size: 35px;
+    position: relative;
+}
+
+.blackLine{
+    background: black;
+    height: 2px;
+    width: 100%;
+}
+
+.blackLineAnimated{
+    animation: .5s slideIn;
+}
+
+
+
+@keyframes slideIn {
+    0% {
+	width: 0px;
+    }
+    100% {
+	width: 100%;
+    }
+}
+
+.bottomBar{
+    z-index: 2;
+    position: fixed;
+    bottom: 0px;
+    *height: 95px;
+    height: 12%;
+    min-height: 70px;
+    width: calc(100% - 100px);
+    max-width: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+    *border: 2px dotted green;
+    margin-left:auto;
+    margin-right: auto;
+    background: #fabb07;
+}
+
+.buttonContainer {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.crtToggle{
+    height: calc(100% - 30px);
+    width: 100px;
+    border: none;
+    background: transparent;
+}
+
+.buttonImage{
+    height: 100%;
+    width: auto;
+    font-size: 100px;
+    font-family: "Terminal";
+}
+
+.buttonText{
+    font-family: "Atlantis";
+    font-size: clamp(10px, 1.5vh, 30px);
+    line-height: 20px;
+    width: 100%
+}
+
+
+
+
+
+
+
+
+#canvas3D{
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+.AfterThisIsFormatting{
+}
+
+
+				
+.essay{
+    text-indent: 50px;
+    line-height: 2;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: left;
+ *   border-style: solid;
+    font-family: "Terminal";
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+#contentCoverPanel{
+    top: 2px;
+    position: absolute;
+    height: calc(100% - 2px);
+    width: 100%;
+    z-index: 3;
+    background: #fabb07;
+}
+
+.contentCoverPanelReveal {
+    animation: 0.4s revealContent forwards;
+    animation-delay: 0.4s;
+}
+
+.contentCoverPanelHide {
+    animation: 0.4s hideContent forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes revealContent {
+    from {
+	opacity: 1;
+    }
+
+    to {
+	opacity: 0;
+    }
+}
+
+@keyframes hideContent {
+    from {
+	opacity: 0;
+    }
+
+    to {
+	opacity: 1;
+    }
+}
+
+#textBox {
+    position: absolute;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    *background: red;
+    height: 35vh;
+    min-height: 150px;
+    width: 96%;
+}
+
+
+
+	
+
+#textBoxImgLeft{
+    position:absolute;
+    height: 100%;
+    width: 200px;
+    left: 0px;
+    image-rendering: pixelated;
+    user-drag: none;
+}
+
+#textBoxImgRight{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 200px);
+    right: 0px;
+    image-rendering: pixelated;
+    user-drag: none;
+}
+
+#nameText{
+    position: absolute;
+    font-size: 35px;
+    font-family: "Terminal";
+    left: 30px;
+    top: 15px;
+    color: white;
+}
+
+#textBoxText{
+    position: absolute;
+    font-size: 35px;
+    font-family: "Terminal";
+    left: 30px;
+    top:85px;
+    color: white;
+}
+
+.content{  
+    width: calc(100% - 100px);
+    text-align: center;
+    margin: auto;
+    font-family: "Terminal";
+    max-width: 1500px;
+    *background: red;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display:block;
+    position: relative;
+}
+
+
+.title{
+    text-align: left;
+    font-family: "Terminal";
+    font-size: 64px;
+    padding: 8px;
+}
+
+.subtitle{
+    text-align: left;
+    font-family: "Terminal";
+    font-size: 35px;
+    line-height: 2;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+    
+
+.benHeader{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Terminal";
+    line-height: 1.5;
+}
+
+ul {
+    font-family: "Terminal";
+}
+
+
+

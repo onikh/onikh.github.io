@@ -54,12 +54,8 @@ function entranceAnimation() {
 
 
 contentCoverPanel.addEventListener('animationend', function() {
-    if (contentCoverPanel.classList.contains("contentCoverPanelReveal")) {
-	contentCoverPanel.style.display = "none";
+
 	nameBoxText.start();	
-    } else if (contentCoverPanel.classList.contains("contentCoverPanelHide")) {
-	contentCoverPanel.style.display = "initial";
-    }   
 });
 
 

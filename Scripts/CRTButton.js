@@ -1,4 +1,6 @@
 
+var CRT = false;
+
 function toggleCRT() {
     
     if (CRT == true) {
@@ -15,8 +17,6 @@ function toggleCRT() {
 	buttonClickSound();
 	CRT = true;
     }
-
-    console.log("neighbor");
 }
 
 

@@ -12,30 +12,12 @@
 
   <body>
 
-    <div id="overlay">
-      <div id="overlayText"></div>
-      <br>
-
-      <div class="overlayButtonContainer" style="opacity:0;">
-      <span class="selectionArrow">▶</span>
-      <button type="button" class="overlayButton" id="soundButtonYes" onclick="overlayButtonAction(this)">Yes</button>
-      </div>
-      
-      <br>
-
-      <div class="overlayButtonContainer" style="opacity:0;">
-	<span class="selectionArrow">▶</span>
-        <button type="button" class="overlayButton" id="soundButtonNo" onclick="overlayButtonAction(this)">No</button>
-      </div>
-
+  
 
     </div>
 
     <div class="CRTRainbow" id="rainbow"></div>
-    <div class="CRTFlicker" id="flicker"></div>
-
-    <img src="Images/pointer.png" class="cursor" id="mouse">
-    
+    <div class="CRTFlicker" id="flicker"></div> 
 
     <audio class="sfx" id="out" preload="auto">
       <source src="./Audio/out.mp3" type="audio/mpeg">
@@ -67,7 +49,7 @@
     </audio>
     
    
-
+  <!-- BEGINNING OF NAVBAR -->
     
     <div class="navBar" id="navBar">
       <table class="navbarTable" id="table">
@@ -77,54 +59,42 @@
 
 	  
 	  
-	  <td class="navBarTableElement" id="nameTD">
+	  <td class="navBarTableElement">
 	    <div class="alignToBottom">
 	      <div class="coverPanel"></div>
 	      <a href="./index.html" class="blackLink">Home</a></div>
 	  </td>
 
+
+	    <td class="navBarTableElement">
+	    <div class="dropdown">
+	      <div class="coverPanel"></div>
+	      <a href="./Pages/AboutMe.html" class="blackLink">About</a>
+	      <div class="dropDownContent">
+		<div class="dropDownElement">
+		  <p class="dropDownText">resume, contact info, </p>
+		 <p class="dropDownText">fun facts abt me</p>
+		</div>
+	      </div>
+	    </div>
+	  </td>
+
 	  
 
 	  <td class="navBarTableElement">
 	    <div class="dropdown">
 	      <div class="coverPanel"></div>
-	    About
+	      <a href="./Pages/Projects.html" class="blackLink">Projects</a>
 	      <div class="dropDownContent">
-		<p class="dropDownElement"><a href="Pages/AboutMe.html" class="grayLink">Who I Am</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Why A Portfolio?</a></p>
-		<p class="dropDownElement"><a href="https://www.omamoka.com/ridge4/english/nonshocked/index.htm" class="grayLink">My Inspiration</a></p>
+		<div class="dropDownElement">
+		  <p class="dropDownText">a timeline of my</p>
+		  <p class="dropDownText">projects/experiences</p>
+		</div>
 	      </div>
 	    </div>
-		
 	  </td>
-
-
 	  
 
-	  <td class="navBarTableElement">
-	    <div class="dropdown">
-	      <div class="coverPanel"></div>
-	      Projects
-	      <div class="dropDownContent">
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Pokémiguel</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Optimal Sort</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
-	      </div>
-	    </div>
-	  </td>
-
-	  <td class="navBarTableElement">
-	    <div class="dropdown">
-	      <div class="coverPanel"></div>
-	      Essays
-	      <div class="dropDownContent">
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Fingerprints</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">AI Sentience</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Decision Bias</a></p>
-	      </div>
-	    </div>
-	  </td>
 	  
 	  
 	</tr>

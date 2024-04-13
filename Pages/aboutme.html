@@ -1,57 +1,177 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<html lang="en">
-  
   <head>
-    <link rel="stylesheet" href="../format.css"> <title>About Me</title> <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../format.css">
+    <link rel="icon" href="rrt4car.PNG">
+    <title>About Me</title>
   </head>
 
-  <body style="background-color:powderblue;">
-  
-  <h1 class="centertxt">Onik Hoque's Digital Portfolio</h1>
-  
+  <body>
 
-      <table>  
-    <tr>
-      <td> <button onclick="location.href='../index.html'">Home</button> </td>
-      <td> <button onclick="location.href='aboutme.html'">About Me</button> </td>
-      <td> <button onclick="location.href='courses.html'">Courses</button> </td>
-      <td> <button onclick="location.href='why.html'">Portfolio</button> </td>
-      <td> <button onclick="location.href='../CS-II/Essays/Fingerprints.html'">Fingerprints</button> </td>
-      <td> <button onclick="location.href='../CS-II/Essays/AI%20Sentience.html'">AI Sentience</button> </td>
-      <td> <button onclick="location.href='../CS-II/Projects/Optimal%20Sort.html'">Optimal Sort</button> </td>  
-    </tr>
-    </table>
-	    
+    <div class="CRTRainbow" id="rainbow"></div>
+    <div class="CRTFlicker" id="flicker"></div>
+
+    <img src="../Images/pointer.png" class="cursor" id="mouse">
     
+
+    <audio id="out" preload="auto">
+      <source src="../Audio/out.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio id="switch" preload="auto">
+      <source src="../Audio/switch.mp3" type="audio/mpeg">
+    </audio>
+
+        <audio id="on" preload="auto">
+      <source src="audio/on.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+	    <audio id="off" preload="auto">
+      <source src="audio/off.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
+
+    
+   
+
+    
+    <div class="navBar" id="navBar">
+      <table class="navbarTable" id="table">
+	<tr>
+	  
+	  <td class="name" id="name"><p class="alignToBottom" style="font-size:50px">ONIK HOQUE</p></td>
+
+	  
+	  
+	  <td class="navBarTableElement" id="nameTD">
+	    <div class="alignToBottom"><a href="../index.html" class="blackLink">Home</a></div>
+	  </td>
+
+	  
+
+	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	    About
+	      <div class="dropDownContent">
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Who I Am</a></p>
+		<p class="dropDownElement"><a href="../index.html" class="grayLink">Why A Portfolio?</a></p>
+		<p class="dropDownElement"><a href="https://www.omamoka.com/ridge4/english/nonshocked/index.htm" class="grayLink">My Inspiration</a></p>
+	      </div>
+	    </div>
+		
+	  </td>
+
+
+	  
+
+	  	  <td class="navBarTableElement">
+	    <div class="dropdown">
+	      <div class="coverPanel"></div>
+	      <a href="./index.html" class="blackLink">Projects</a>
+	      <div class="dropDownContent">
+		<p class="dropDownElement">a timeline of my projects</p>
+	      </div>
+	    </div>
+	  </td>
+	  
+	  
+	</tr>
+      </table>
+    
+      
+      <div class="blackLine" id="blackLine"></div>
+      
+    </div>
+
+
+    
+
+
+    <!-- END OF TOPBAR -->
+    <br>
+    <br>
     <br>
     
+    <div class="content">
+
+      
+      <p class="title">Who I Am</p>
+
+      
+      <br>
+      <br>
+      <br>
+      
+
+  
+
+      <p class="subtitle">Summary</p>
+      <p class="essay">My name is Onik Hoque. I was born in Dallas, but grew up in Washington, DC and moved back to Dallas towards the end of elementary school. As of now, I'm a senior in high school interested in pursuing a career in computer science preceded by at least a bachelor's degree in computer science. In my free time, I like reading, programming, playing basketball, and being with friends and family.</p>
+
+      <br><br><br>
+
+      <p class="subtitle">Assorted Things I Like</p>
+      <ul class="essay">
+	<li>Portland Trail Blazers</li>
+	<li>Natural history</li>
+	<li>Arsenal FC</li>
+	<li>Pokemon</li>
+	<li>Nature walks</li>
+	<li>Playboi Carti</li>
+	<li>Samurai Champloo</li>
+	
+	
+	  
+	</ul>
+
+      <br>
+
+
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      
+    </div>
+
+
+
     
     
-    <h2 class="generalHeader">ABOUT ME</h2>
-    <br>
-    <h3 class="generalHeader">Summary</h3>
-  <p class="generalText">Hi! My name is Onik Hoque and I am a junior at Allen High School. I am in Mr. Ben's third period CS2, and I also took CS1 last year. I started playing basketball this summer, and it's become a major pasttime of mine. Music is a big thing for me; I think that when I grow up I would most like to be a singer. CS is also something I find really interesting, and a hoping to get more into this school year. This year, I am hoping to expand my knowledge in computer science, and see what kind of avenues open.</p>
 
-  <p class="generalText">I was born in Dallas, but moved to the suburbs of Washington DC when I was 8. I lived there for 4 years, and during that time I really got to the know the people and find a place I truly considered home. I moved back at the age of 12, but those years were very formative for me, and I consider myself as having grown up in DC. I credit the forests and creeks of the land with fostering my sense of curiosity, the same sense that I apply today to computer science.</p>
+    <!-- BEGINNING OF BOTTOMBAR -->
 
 
-  <br>
-  <h3 class="generalHeader">Goals for the Future</h3>
-  <p class="generalText">  There's a lot of things I want to accomplish before I graduate. My goal is to attend UTD or UT, but I think those come second to the set of small goals that keep me occupied day to day. I want to develop a Street Fighter-esque fighting game, with my own original music and assets. Adding on to music, which is a huge influence on me, I'd like to make music and perhaps release an album or EP. Lastly, I'd like to get better at sports, especially basketball. My goal for the past year has been to touch the rim of a 10 foot hoop (really difficult at 5'7), which I was able to achieve in August of 2022. Now my goal is to dunk, and it'll take a lot of work to get there.</p>
+    <div class="bottomBar" id="bottomBar">
+      <div class="blackLine"></div>
+      
 
-  <br>
+      <div class="buttonContainer">
+      <button class="crtToggle" id="crtToggle">
+	<img src="../Images/crt.png" alt="image failed to load" class="buttonImage" id="CRTImage">
+      </button>
+      <div class="buttonText">Toggle CRT Effect</div>
+      </div>
+
+      
+    </div>
+
   
-  
-  
-    <img src="../Images/aboutme.png" class="center" width="200" height="250" alt="Image failed to load">
 
 
+    
 
-    <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0HMCdlOPJkAGlB0MlSWIcO?utm_source=generator" width="60%" height="352" frameBorder="0" allowfullscreen="" margin="auto" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
-  <br>
-  <br>
 
-      <div><p class="bottom">Digital Portfolio can be found on GitHub <a href="https://onikh.github.io/index.html">here</a></p></div>
-  </body>
-  </html>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../Scripts/animation.js"></script>
+    <script src="../Scripts/cursor.js"></script>
+    <script src="../Scripts/main.js"></script>
+    
+   
+    
+  </body>  
+</html>

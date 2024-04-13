@@ -7,77 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../format.css">
     <link rel="icon" href="rrt4car.PNG">
-    <title>About Me</title>
+    <title>LEVEL SELECT</title>
   </head>
 
   <body>
 
+  
+
+    </div>
+
     <div class="CRTRainbow" id="rainbow"></div>
-    <div class="CRTFlicker" id="flicker"></div>
+    <div class="CRTFlicker" id="flicker"></div> 
 
-    <img src="../Images/pointer.png" class="cursor" id="mouse">
-    
-
-    <audio id="out" preload="auto">
-      <source src="../Audio/out.mp3" type="audio/mpeg">
+    <audio class="sfx" id="out" preload="auto">
+      <source src="./Audio/out.mp3" type="audio/mpeg">
       Your browser doesn't support audio
     </audio>
 
-    <audio id="switch" preload="auto">
-      <source src="../Audio/switch.mp3" type="audio/mpeg">
+    <audio class="sfx" id="switch" preload="auto">
+      <source src="Audio/switch.mp3" type="audio/mpeg">
     </audio>
 
-        <audio id="on" preload="auto">
-      <source src="audio/on.wav" type="audio/wav">
+        <audio class="sfx" id="on" preload="auto">
+      <source src="Audio/on.wav" type="audio/wav">
       Your browser doesn't support audio
     </audio>
 
-	    <audio id="off" preload="auto">
-      <source src="audio/off.wav" type="audio/wav">
+	    <audio class="sfx" id="off" preload="auto">
+      <source src="Audio/off.wav" type="audio/wav">
       Your browser doesn't support audio
     </audio>
 
+    <audio id="music" preload="auto">
+      <source src="./Audio/moveme.mp3" type="audio/mpeg">
+      Your browser doesn't support audio
+    </audio>
+
+    <audio class="sfx" id="dialogue" preload="auto">
+      <source src="./Audio/dialogue.wav" type="audio/wav">
+      Your browser doesn't support audio
+    </audio>
     
    
-
+  <!-- BEGINNING OF NAVBAR -->
     
     <div class="navBar" id="navBar">
       <table class="navbarTable" id="table">
 	<tr>
 	  
-	  <td class="name" id="name"><p class="alignToBottom" style="font-size:50px">ONIK HOQUE</p></td>
+	  <td class="name" id="name"><div class="alignToBottom" style="font-size:50px"><div class="coverPanel"></div>ONIK HOQUE</div></td>
 
 	  
 	  
-	  <td class="navBarTableElement" id="nameTD">
-	    <div class="alignToBottom"><a href="../index.html" class="blackLink">Home</a></div>
-	  </td>
-
-	  
-
 	  <td class="navBarTableElement">
-	    <div class="dropdown">
-	    About
-	      <div class="dropDownContent">
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Who I Am</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Why A Portfolio?</a></p>
-		<p class="dropDownElement"><a href="https://www.omamoka.com/ridge4/english/nonshocked/index.htm" class="grayLink">My Inspiration</a></p>
-	      </div>
-	    </div>
-		
+	    <div class="alignToBottom">
+	      <div class="coverPanel"></div>
+	      <a href="../index.html" class="blackLink">Home</a></div>
 	  </td>
 
 
-	  
-
-	  <td class="navBarTableElement">
+	    <td class="navBarTableElement">
 	    <div class="dropdown">
-	      Projects
+	      <div class="coverPanel"></div>
+	      <a href="./AboutMe.html" class="blackLink">About</a>
 	      <div class="dropDownContent">
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Pokémiguel</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Optimal Sort</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">ShelterSafe</a></p>
+		<div class="dropDownElement">
+		  <p class="dropDownText">resume, contact info, </p>
+		 <p class="dropDownText">fun facts abt me</p>
+		</div>
 	      </div>
 	    </div>
 	  </td>
@@ -86,14 +83,18 @@
 
 	  <td class="navBarTableElement">
 	    <div class="dropdown">
-	      Essays
+	      <div class="coverPanel"></div>
+	      <a href="./Projects.html" class="blackLink">Projects</a>
 	      <div class="dropDownContent">
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Fingerprints</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">AI Sentience</a></p>
-		<p class="dropDownElement"><a href="../index.html" class="grayLink">Decision Bias</a></p>
+		<div class="dropDownElement">
+		  <p class="dropDownText">a timeline of my</p>
+		  <p class="dropDownText">projects/experiences</p>
+		</div>
 	      </div>
 	    </div>
 	  </td>
+	  
+
 	  
 	  
 	</tr>
@@ -109,11 +110,12 @@
 
 
     <!-- END OF TOPBAR -->
-    <br>
-    <br>
-    <br>
-    
+
     <div class="content">
+      <div class="contentCoverPanel"></div>
+
+      <br><br><br>
+	
 
       
       <p class="title">Who I Am</p>
@@ -122,7 +124,12 @@
       <br>
       <br>
       <br>
-      
+
+      <a href="../OtherAssets/resume.pdf" class="blackLink" style="font-size:25px;" target="_blank" title="Onik's Resume">
+	Click here to view my resume!!!
+      </a>
+
+      <br><br><br>
 
   
 
@@ -132,30 +139,29 @@
       <br><br><br>
 
       <p class="subtitle">Assorted Things I Like</p>
-      <ul class="essay">
+      <ul>
 	<li>Portland Trail Blazers</li>
 	<li>Natural history</li>
 	<li>Arsenal FC</li>
 	<li>Pokemon</li>
-	<li>Nature walks</li>
+	<li>Mountains</li>
 	<li>Playboi Carti</li>
 	<li>Samurai Champloo</li>
-	
-	
-	  
 	</ul>
 
       <br>
 
 
-      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br>
 
       
     </div>
 
 
-
     
+    
+
+
     
 
     <!-- BEGINNING OF BOTTOMBAR -->
@@ -166,8 +172,9 @@
       
 
       <div class="buttonContainer">
+	<div class="coverPanel" style="bottom:0%; top:auto;"></div>
       <button class="crtToggle" id="crtToggle">
-	<img src="../Images/crt.png" alt="image failed to load" class="buttonImage" id="CRTImage">
+	<img src="../Images/crtdisabled.png" alt="image failed to load" class="buttonImage" id="CRTImage">
       </button>
       <div class="buttonText">Toggle CRT Effect</div>
       </div>
@@ -180,10 +187,20 @@
 
     
 
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../Scripts/animation.js"></script>
+
+    <script src="../Scripts/SFX.js"></script>
+    <script src="./CRTButton.js"></script>
     <script src="../Scripts/main.js"></script>
    
+    <script type="module" src="../Scripts/model.js"></script>
+    
+
     
   </body>  
 </html>

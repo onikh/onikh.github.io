@@ -36,8 +36,8 @@ document.querySelectorAll(".dropdown").forEach( item => {
 
 
 
-document.querySelectorAll(".grayLink").forEach( item => {
-    item.addEventListener("mouseover", function( event ) {
+document.querySelectorAll(".dropdown").forEach( item => {
+    item.addEventListener("click", function( event ) {
 	buttonClickSound();
 	    //switchSFX.currentTime = 0;
 	

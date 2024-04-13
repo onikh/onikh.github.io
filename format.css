@@ -1,4 +1,5 @@
 :root {
+    --tan: #f3ebff;
 }
 
 
@@ -15,7 +16,7 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: ##e0a90b;
+    background: var(--tan);
   }
 
   *::-webkit-scrollbar-thumb {
@@ -30,7 +31,8 @@
     padding: 0px;
     font-family: Verdana;
     *border: 1px dotted;
-    cursor: none;
+    *cursor: none;
+    cursor: url("./Images/pointer.png"), auto;
     user-select: none;
 }
 
@@ -45,11 +47,9 @@
 }
 
 
-
-
 body{
     height: 100%;
-    background: #fabb07;
+    background: var(--tan);
     *background: white;
    *overflow: hidden;
 }
@@ -64,7 +64,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fabb07;
+    background: var(--tan);
     z-index: 10;
     text-align: center;
     font-family: "Terminal";
@@ -105,11 +105,6 @@ body{
     opacity: 1;
 }
 
-
-
-
-    
-
 .cursor{
     position: absolute;
     *display: none;
@@ -121,9 +116,6 @@ body{
     overflow: hidden;
 }
 
-
-
-
 .navBar{
     position: sticky;
     top: 0px;
@@ -134,7 +126,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     min-height: 70px;
-    background: #fabb07;
+    background: var(--tan);
 }
 
 .navbarTable{
@@ -148,10 +140,7 @@ body{
     height: 100%;
     width: 100%;
     z-index: 5;
-    background: #fabb07;
-}
-
-.coverPanelAnimated{
+    background: var(--tan);
     animation: 0.4s revealText forwards;
     animation-delay: 0.37s;
 }
@@ -280,11 +269,10 @@ body{
     color: white;
     font-family: "Terminal";
     width: 100%;
+    pointer-events: none;
 }
 
-.dropDownElement:hover .grayLink{
-    animation: blinkingText .6s infinite;
-}
+
 .blackLink:hover{
     animation: blinkingTextBlack .6s infinite;
 }
@@ -332,12 +320,14 @@ a:visited {
     display: block;
     position: absolute;
     *z-index: 1;
+    pointer-events: none;
+   
 }
 
 .dropDownElement{
-    font-family:s "Terminal";
+    font-family: "Terminal";
     font-size: 16px;
-    height: 30px;
+    height: 60px;
     width: 0px;
     background: rgba(78,78,79,255);
     border: 2px solid white;
@@ -346,14 +336,25 @@ a:visited {
     line-height: 30px; 
     text-align: left;
     padding-left: 2px;
-    overflow: hidden;
+   
     visibility: hidden;
     transition: width .5s, visibility .45s 0s;
+
+    white-space: nowrap;
+}
+
+.dropDownText {
+    font-family: "Terminal";
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    width: 100%;
 }
 
 .dropdown:hover .dropDownElement{
-   width: 120px;
+   width: 135px;
    transition: .5s;
+   *overflow: visible;
    visibility: visible;  
 }
 
@@ -385,9 +386,6 @@ a:visited {
     background: black;
     height: 2px;
     width: 100%;
-}
-
-.blackLineAnimated{
     animation: .5s slideIn;
 }
 
@@ -416,7 +414,7 @@ a:visited {
     *border: 2px dotted green;
     margin-left:auto;
     margin-right: auto;
-    background: #fabb07;
+    background: var(--tan);
 }
 
 .buttonContainer {
@@ -471,14 +469,27 @@ a:visited {
 .essay{
     text-indent: 50px;
     line-height: 2;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
  *   border-style: solid;
     font-family: "Terminal";
     padding: 10px;
     font-size: 24px;
+    width: 60%;
+    min-width: 700px;
 }
+
+.essay2{
+    text-indent: 50px;
+    line-height: 2;
+    text-align: left;
+
+    font-family: "Terminal";
+    padding: 10px;
+    font-size: 20px;
+}
+    
 
 
 #contentCoverPanel{
@@ -487,10 +498,7 @@ a:visited {
     height: calc(100% - 2px);
     width: 100%;
     z-index: 3;
-    background: #fabb07;
-}
-
-.contentCoverPanelReveal {
+    background: var(--tan);
     animation: 0.4s revealContent forwards;
     animation-delay: 0.4s;
 }
@@ -584,6 +592,7 @@ a:visited {
     overflow-y: auto;
     display:block;
     position: relative;
+    height: 76vh;
 }
 
 
@@ -599,8 +608,24 @@ a:visited {
     font-family: "Terminal";
     font-size: 35px;
     line-height: 2;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 700px;
+    width: 60%;
+}
+
+
+.subtitle2{
+    text-align: left;
+    font-family: "Terminal";
+    font-size: 26px;
+    line-height: 1;
+    padding-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 700px;
+    width: 60%;
+    padding-bottom: 20px;
 }
     
 
@@ -612,8 +637,24 @@ a:visited {
     line-height: 1.5;
 }
 
+.video{
+    
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ul {
+    text-align: left;
     font-family: "Terminal";
+    margin-left: 60px;
+}
+
+li {
+    font-family: "Terminal";
+    font-size: 24px;
+    padding: 8px;
 }
 
 
