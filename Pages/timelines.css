@@ -38,7 +38,7 @@
   position: relative;
   background-color: inherit;
   width: 50%;
-  border: 3px solid blue;
+  *border: 3px solid blue;
 }
 
 .container::after {
@@ -47,7 +47,7 @@
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: red;
+  background-color: rgba(78, 78, 79, 255);
   border: 4px solid white;
   top: 15px;
   border-radius: 50%;
@@ -70,9 +70,9 @@
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid green;
+  border: medium solid black;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent green;
+  border-color: transparent transparent transparent black;
 }
 
 .right::before {
