@@ -38,12 +38,12 @@
 
 @font-face{
     font-family: "Terminal";
-    src: url(Fonts/Terminal.ttf);
+    src: url(/Fonts/Terminal.ttf);
 }
 
 @font-face{
     font-family: "Atlantis";
-    src: url(Fonts/Atlantis.ttf);
+    src: url(/Fonts/Atlantis.ttf);
 }
 
 
@@ -188,13 +188,13 @@ body{
 	opacity: 0.23604;
     }
     15% {
-	opacity: 0.90626;
+	opacity: 0.50626;
     }
     20% {
 	opacity: 0.18128;
     }
     25% {
-	opacity: 0.83891;
+	opacity: 0.43891;
     }
     30% {
 	opacity: 0.65583;
@@ -206,13 +206,13 @@ body{
 	opacity: 0.26559;
     }
     45% {
-	opacity: 0.84693;
+	opacity: 0.64693;
     }
     50% {
-	opacity: 0.96019;
+	opacity: 0.86019;
     }
     55% {
-	opacity: 0.08594;
+	opacity: 0.28594;
     }
     60% {
 	opacity: 0.20313;
@@ -236,7 +236,7 @@ body{
 	opacity: 0.7003;
     }
     95% {
-	opacity: 0.36108;
+	opacity: 0.56108;
     }
     100% {
 	opacity: 0.24387;
@@ -253,7 +253,7 @@ body{
     opacity: 0;
     z-index: 5;
     pointer-events: none;
-    animation: flicker 0.6s infinite;
+    animation: flicker 1.3s infinite ;
 }
 
 .blackLink{
@@ -469,7 +469,7 @@ a:visited {
 
 				
 .essay{
-    text-indent: 50px;
+    text-indent: 25px;
     line-height: 2;
     margin-right: auto;
     margin-left: auto;
@@ -483,10 +483,9 @@ a:visited {
 }
 
 .essay2{
-    text-indent: 50px;
-    line-height: 2;
+    text-indent: 25px;
+    line-height: 1.5;
     text-align: left;
-
     font-family: "Terminal";
     padding: 10px;
     font-size: 20px;

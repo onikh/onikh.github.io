@@ -44,11 +44,6 @@ function entranceAnimation() {
     });
 
     contentCoverPanel.classList.add("contentCoverPanelReveal");
-
- 
-
-
-    
     
 }
 
