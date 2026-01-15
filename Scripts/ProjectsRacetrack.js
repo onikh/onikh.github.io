@@ -63,12 +63,45 @@ function showProject(project) {
     </div>
 
     <p class="essay2">${project.description}</p>
+
+    ${renderMedia(project.media)}
+
   `;
 }
 
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+function renderMedia(media = []) {
+  if (!media.length) return "";
+
+  return `
+    <div class="mediaGallery">
+      ${media.map(item => {
+        if (item.type === "video") {
+          return `
+            <video class="mediaObject" controls>
+              <source src="${item.src}">
+            </video>
+          `;
+        }
+
+        if (item.type === "image") {
+          return `
+            <img class="mediaObject" src="${item.src}">
+          `;
+        }
+
+       
+        return `
+          <a href="${item.src}" target="_blank">Open media</a>
+        `;
+      }).join("")}
+    </div>
+  `;
 }
 
 
@@ -82,7 +115,9 @@ const projects = [
     description: "SwiftUI app that used live computer vision to track basketball makes, misses, and dribbles. Practice data stored in the cloud with Firebase; users can see the stats of their friends.",
     skills : ["Computer Vision", "CUDA", "PyTorch", "SwiftUI", "Firebase", "Image Processing"],
     link: "insert link here",
-    URLs: []
+    media: [
+      { type: "video", src:"/Pages/ProjectImages/SwishLab.mp4" }
+    ]
 
   },
 
@@ -94,7 +129,7 @@ const projects = [
     description: "React app that recorded speech, converted to text to send to an LLM, which processed it and output nodes and edges in a JSON which is rendered into live mind map of discussions that updated as the conversation went.",
     skills : ["LLMs", "React", "Speech Processing (Deepgram)", "REST APIs"],
     link: "insert link here",
-    URLs: []
+    media: []
 
   },
 
@@ -106,7 +141,7 @@ const projects = [
     description: "A gesture recognition chip drives a Pi Zero using the BlueZ Python library to skip/rewind media playing on a phone, or pick up/decline incoming calls. Intended for use in a vehicle to reduce distracted accidents.",
     skills : ["I2C", "MicroPython", "Bluetooth Classic", "Bluetooth AVRCP/A2DP" ],
     link: "insert link here",
-    URLs: []
+    media: []
 
   },
 
@@ -118,7 +153,7 @@ const projects = [
     description: "Selected sensors for the DAQ, interfaced with a Pi Pico at each wheel, using a Pi CAN Cowbell to convert to CAN signal to send to ECU. Limited experience with STM32 before switching to Pi for prototyping. ",
     skills: ["CAN", "I2C", "UART", "SPI", "Analog sensors", "MicroPython"],
     link: "insert link here",
-    URLs: []
+    media: []
 
   },
 
@@ -130,7 +165,7 @@ const projects = [
     skills: ["C++", "I2C", "LLMs", "ESP32", "Analog sensors"],
     description: "Wearable with 3D-custom TPU shell. An ESP32 recorded body temperature, heart rate, and distance ran, which was periodically sent to an LLM aware of user goals and could recommend more or less intense exercise. ",
     link: "insert link here",
-    URLs: []
+    media: []
 
   },
 
@@ -142,7 +177,7 @@ const projects = [
     skills: ["HTML", "CSS", "JavaScript", "Git"],
     description: "This website. Created with vanilla CSS/HTML, aside from animation libraries like Typed.js and animejs. Based on the UI for Ridge Racer Type 4 for the PlayStation 1.",
     link: "insert link here",
-    URLs: ["https://github.com/onikh/onikh.github.io"]
+    media: []
 
   },
 ]
